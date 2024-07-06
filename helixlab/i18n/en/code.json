@@ -291,5 +291,20 @@
   },
   "Docusaurus lets you focus on your docs, and we'll do the chores. Go ahead and move your docs into the codes directory.": {
     "message": "Docusaurus lets you focus on your docs, and we'll do the chores. Go ahead and move your docs into the codes directory.英文"
+  },
+  "夜间模式": {
+    "message": "Dark mode"
+  },
+  "快速找到答案": {
+    "message": "Get answers fast"
+  },
+  "搜索任何内容": {
+    "message": "Search for anything"
+  },
+  "进入文档": {
+    "message": "Enter"
+  },
+  "选择产品": {
+    "message": "Choose Product"
   }
 }

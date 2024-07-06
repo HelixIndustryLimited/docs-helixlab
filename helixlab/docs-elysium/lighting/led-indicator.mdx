@@ -1,0 +1,56 @@
+---
+sidebar_position: 2
+description: 指示灯
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# 指示灯 {#led-indicator}
+
+## CapsLock 指示灯 {#capslock-indicator}
+
+<Tabs queryString="pcb-variant">
+  <TabItem value="hotswap" label="热插拔" default>
+
+    当 CapsLock 触发时，字母区 RGB 灯会根据大小写锁定状态变色。
+
+    如果 RGB 矩阵被关闭，那么即使大小写状态改变也不会引起任何灯光变化。
+
+  </TabItem>
+  <TabItem value="soldered" label="焊接">
+    
+    <Icon icon="fa-solid fa-minus" />
+
+  </TabItem>
+</Tabs>
+
+## ScrollLock 指示灯 {#capslock-indicator}
+
+<Tabs queryString="pcb-variant">
+  <TabItem value="hotswap" label="热插拔" default>
+
+    没有 ScrollLock 指示灯。
+
+  </TabItem>
+  <TabItem value="soldered" label="焊接">
+    
+    <Icon icon="fa-solid fa-minus" />
+
+  </TabItem>
+</Tabs>
+
+## NumLock 指示灯 {#capslock-indicator}
+
+<Tabs queryString="pcb-variant">
+  <TabItem value="hotswap" label="热插拔" default>
+
+    没有 NumLock 指示灯。
+
+  </TabItem>
+  <TabItem value="soldered" label="焊接">
+    
+    <Icon icon="fa-solid fa-minus" />
+
+  </TabItem>
+</Tabs>

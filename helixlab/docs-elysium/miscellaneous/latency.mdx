@@ -1,0 +1,40 @@
+---
+sidebar_position: 3
+description: 键盘输入延迟
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# 延迟  {#latency}
+
+延迟指的是从手指按下按键到电脑输出字符所花费的时间。
+
+下方的数据记录了各版本和固件的延迟表现。
+
+<Tabs queryString="pcb-variant">
+  <TabItem value="hotswap" label="热插拔" default>
+
+    | 固件版本 | USB | BLE | 2G4 |
+    | --- | --- | --- | --- |
+    | 1.0.0 | 11ms | 25ms | 15ms |
+    | 1.0.0_ll | 8ms | 19ms | 9ms |
+
+  </TabItem>
+  <TabItem value="soldered" label="焊接">
+    
+    <Icon icon="fa-solid fa-minus" />
+
+  </TabItem>
+</Tabs>
+
+:::tip
+
+延迟不是一个固定的值，而是会到多种因素影响，在实际情况下会有 30% 左右的浮动。以下行为有助于降低延迟：
+
+* 关闭键盘上的 RGB 矩阵 <sup>[<Icon icon="fa-solid fa-compass" /> 怎么做？](/docs-elysium/lighting/rgb-matrix/#keycode-behaviour)</sup>。
+* USB 有线模式下，将键盘直连主机的 USB 接口，而不是通过集线器（HUB）。
+* 2G4 无线模式下，避免让接收器靠近正在工作中的 USB 3.0 设备。
+* 为键盘烧录带有“ll”后缀的延迟优化固件 <sup>[<Icon icon="fa-solid fa-compass" /> 怎么做？](/docs-elysium/firmware-update/mcu-firmware-update)</sup>。
+
+:::

@@ -1,6 +1,6 @@
 {
   "title": {
-    "message": "My Site",
+    "message": "Helix Lab",
     "description": "The title in the navbar"
   },
   "logo.alt": {
@@ -14,5 +14,37 @@
   "item.label.Blog": {
     "message": "Blog",
     "description": "Navbar item with label Blog"
+  },
+  "item.label.文档": {
+    "message": "Documents",
+    "description": "Navbar item with label 文档"
+  },
+  "item.label.商店": {
+    "message": "Shop",
+    "description": "Navbar item with label 商店"
+  },
+  "item.label.下载": {
+    "message": "Downloads",
+    "description": "Navbar item with label 下载"
+  },
+  "item.label.产品": {
+    "message": "Products",
+    "description": "Navbar item with label 产品"
+  },
+  "item.label.Aaru 65": {
+    "message": "Aaru 65",
+    "description": "Navbar item with label Aaru 65"
+  },
+  "item.label.Aaru 87": {
+    "message": "Aaru 87",
+    "description": "Navbar item with label Aaru 87"
+  },
+  "item.label.Elysium™": {
+    "message": "Elysium™",
+    "description": "Navbar item with label Elysium™"
+  },
+  "item.label.Test": {
+    "message": "Test",
+    "description": "Navbar item with label Test"
   }
 }

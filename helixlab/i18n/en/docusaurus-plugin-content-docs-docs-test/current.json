@@ -1,0 +1,14 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.Test-category": {
+    "message": "Test-category",
+    "description": "The label for category Test-category in sidebar docs"
+  },
+  "sidebar.docs.link.Test-link": {
+    "message": "Test-link",
+    "description": "The label for link Test-link in sidebar docs, linking to /docs-elysium/intro"
+  }
+}

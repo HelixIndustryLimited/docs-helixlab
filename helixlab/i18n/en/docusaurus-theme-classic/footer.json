@@ -21,7 +21,7 @@
   },
   "link.item.label.Discord": {
     "message": "Discord",
-    "description": "The label of footer link with label=Discord linking to https://discordapp.com/invite/docusaurus"
+    "description": "The label of footer link with label=Discord linking to https://discord.gg/jRutFfBruz"
   },
   "link.item.label.Twitter": {
     "message": "Twitter",
@@ -36,7 +36,7 @@
     "description": "The label of footer link with label=GitHub linking to https://github.com/facebook/docusaurus"
   },
   "copyright": {
-    "message": "Copyright © 2024 My Project, Inc. Built with Docusaurus.",
+    "message": "Copyright © 2024 Helix lab.",
     "description": "The footer copyright"
   }
 }

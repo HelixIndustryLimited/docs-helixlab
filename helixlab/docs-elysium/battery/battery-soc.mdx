@@ -1,0 +1,44 @@
+---
+sidebar_position: 4
+description: 了解如何获取电量百分比
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# 电量百分比 {#battery-soc}
+
+:::note
+
+本页面内容仅适用于 Elysium 热插拔版本。
+
+:::
+
+## 查看电量百分比 {#check-battery-soc}
+
+<Tabs queryString="mode-variant">
+  <TabItem value="ble" label="BLE" default>
+
+在蓝牙模式下，通常可以从系统的蓝牙连接页面获取电量信息。
+
+  </TabItem>
+  <TabItem value="2g4" label="2G4">
+
+在 2G4 模式下，无法像蓝牙模式那样直接查看电量信息，但可模糊查询电量：
+
+<Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-1" style={{color: "#cc9e75",}} /> 打开任何一个可以提供输入的软件，如记事本、浏览器地址栏等。
+
+<Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-2" style={{color: "#cc9e75",}} /> 按下组合键 <kbd>**fn**</kbd> + <kbd>**B**</kbd>。
+
+<Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-3" style={{color: "#cc9e75",}} /> 输入框中会出现一个数字，代表当前剩余电量。例如：出现的数字是 7，代表当前剩余电量在 70-80% 之间。
+
+  </TabItem>
+</Tabs>
+
+:::tip
+
+如果电量始终显示为 100%，则可能说明电池未安装或 [电池开关](/docs-elysium/battery/battery-switch) 未打开。
+
+如果电池已经安装并且电池开关已经打开，但电量仍显示为 100%，你可以按下组合键 <kbd>**fn**</kbd> + <kbd>**M**</kbd> 来校准电量百分比。
+
+:::

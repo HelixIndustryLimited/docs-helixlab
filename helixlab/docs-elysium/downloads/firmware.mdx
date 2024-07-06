@@ -1,0 +1,42 @@
+---
+sidebar_position: 1
+description: 获取固件及 VIA 配置文件
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# 固件 {#firmware}
+
+## 主控固件及 VIA JSON {#firmware-of-mcu-and-via-json}
+
+:::tip
+
+查看键盘当前所运行的固件版本：
+
+打开任何一个可以提供输入的软件，如记事本、浏览器地址栏等，在键盘上按下组合键 <kbd>**fn**</kbd> + <kbd>**V**</kbd>，输入框中会出现一个数字或字母，代表固件版本**代号**。例如，代号为 0 意味着固件版本为 1.0.0。
+
+:::
+
+<Tabs queryString="pcb-variant">
+  <TabItem value="hotswap" label="热插拔" default>
+
+    | 固件版本 | VIA JSON | 更新内容 | 代号 |
+    |---|---| --- | --- |
+    | <Icon icon="fa-solid fa-circle-down" /> [`1.0.0`](https://google.com) | <Icon icon="fa-solid fa-circle-down" /> [`1.0.0`](https://google.com) | <Icon icon="fa-solid fa-floppy-disk" /> [record](https://google.com) | 0 |
+
+  </TabItem>
+  <TabItem value="soldered" label="焊接">
+    
+    | 固件版本 | VIA JSON | 更新内容 | 代号 |
+    |---|---| --- | --- |
+    | <Icon icon="fa-solid fa-minus" /> | <Icon icon="fa-solid fa-minus" /> | <Icon icon="fa-solid fa-minus" /> | 0 |
+
+  </TabItem>
+</Tabs>
+
+## 蓝牙模块固件 {#firmware-of-bt-module}
+
+    | 固件版本 | 版本更新记录 | 
+    |---|---|
+    | <Icon icon="fa-solid fa-circle-down" /> [`1.0.0`](https://google.com) | <Icon icon="fa-solid fa-minus" /> |

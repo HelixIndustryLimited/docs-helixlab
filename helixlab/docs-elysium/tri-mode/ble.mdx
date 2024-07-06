@@ -1,0 +1,104 @@
+---
+sidebar_position: 3
+description: BLE 无线模式
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import ReactPlayer from 'react-player'
+import swift_pair_tuts_1 from './img/ApplicationFrameHost_lsVp1XOzBz.mp4'
+import swift_pair_tuts_2 from './img/explorer_u7Srq08ten.mp4'
+import swift_pair_tuts_3 from './img/ApplicationFrameHost_624Oh5GaYw.mp4'
+import swift_pair_tuts_4 from './img/ApplicationFrameHost_qY9s0ST3sN.mov'
+
+
+# BLE {#ble}
+
+:::note
+
+本页面内容仅适用于 Elysium 热插拔版本。
+
+:::
+
+---
+
+蓝牙 <Icon icon="fa-brands fa-bluetooth" style={{color: "#74C0FC",}} /> 是一种无线数据传输标准。Elysium 支持蓝牙 5.2，向下兼容蓝牙 4.2/4.0。
+
+要通过蓝牙使用键盘，必须将 Elysium 与你的主机配对。Elysium 最多支持配对**一台**主机。
+
+## 配对 {#pairing}
+
+<Tabs queryString="os-variant">
+  <TabItem value="windows" label="Windows" default>
+
+对于 <Icon icon="fa-brands fa-windows" /> Windows，有两种配对方式，分别是：
+
+* **Swift 配对** <sup><Icon icon="fa-solid fa-thumbs-up" /> 推荐</sup>：在 Windows 10 版本 1803 中引进，是把蓝牙设备配对至 Windows 主机的最新方式。无需用户手动搜寻键盘，只要键盘处于搜寻范围内并准备好配对，Windows 就会主动推送配对通知。
+* **手动配对**：手动搜寻键盘并配对，属于传统的配对方式。
+### Swift 配对步骤 {#swift-pairing}
+
+:::info
+
+在 Windows 上使用 Swift 配对，须满足以下条件：
+
+* 系统至少为 Windows 10 版本 1803。
+* 主机蓝牙控制器支持 Swift 配对。
+
+本教程内容以 Windows 11 23H2 为例。更多关于 Swift 配对的信息，请前往 [Microsoft Learn](https://learn.microsoft.com/zh-cn/windows-hardware/design/device-experiences/bluetooth-swift-pair) 查看。
+
+:::
+
+<Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-1" style={{color: "#cc9e75",}} /> Windows 的 Swift 配对可能不是默认开启的，请按下方视频的步骤检查该功能是否已经开启：
+
+<ReactPlayer playing controls height="100%" url={swift_pair_tuts_1} />
+
+> <text className="quote-text"> <Icon icon="fa-solid fa-caret-right" /> 前往“设置”。  
+<Icon icon="fa-solid fa-caret-right" /> 选择左侧边栏中的“<Icon icon="fa-brands fa-bluetooth" /> 蓝牙和其他设备”。  
+<Icon icon="fa-solid fa-caret-right" /> 选择“设备”。  
+<Icon icon="fa-solid fa-caret-right" /> 打开“显示使用‘迅速配对’进行连接的通知 <Icon icon="fa-solid fa-toggle-on" />”。如果你找不到此按钮，则可能意味着你的电脑不支持 Swift 配对。</text>
+
+<Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-2" style={{color: "#cc9e75",}} /> 确认 Elysium 处于 BLE 模式 <sup>[<Icon icon="fa-solid fa-compass" /> 怎么做？](/docs-elysium/tri-mode/mode-switch/#select-ble-mode)</sup>，然后按 <kbd>**fn**</kbd> + <kbd>**X**</kbd> 解除与其他设备的配对。
+
+<Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-3" style={{color: "#cc9e75",}} /> 如下方视频所示，你的屏幕右下角应该会推送通知，点击“连接”即可完成配对。
+
+<ReactPlayer playing controls height="100%" url={swift_pair_tuts_2} />
+
+---
+
+### 手动配对步骤 {#manually-pairing}
+
+<Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-1" style={{color: "#cc9e75",}} /> 确认 Elysium 处于 BLE 模式 <sup>[<Icon icon="fa-solid fa-compass" /> 怎么做？](/docs-elysium/tri-mode/mode-switch/#select-ble-mode)</sup>，然后按 <kbd>**fn**</kbd> + <kbd>**X**</kbd> 解除与其他设备的配对。
+
+<Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-2" style={{color: "#cc9e75",}} /> 根据下方视频的步骤配对键盘：
+
+<ReactPlayer playing controls height="100%" url={swift_pair_tuts_3} />
+
+> <text className="quote-text"> <Icon icon="fa-solid fa-caret-right" /> 前往“设置”。  
+<Icon icon="fa-solid fa-caret-right" /> 选择左侧边栏中的“<Icon icon="fa-brands fa-bluetooth" /> 蓝牙和其他设备”。  
+<Icon icon="fa-solid fa-caret-right" /> 点击“添加设备”。  
+<Icon icon="fa-solid fa-caret-right" /> 选择“蓝牙”  
+<Icon icon="fa-solid fa-caret-right" /> 选择“Elysium”。</text>
+
+  </TabItem>
+  <TabItem value="macos" label="macOS">
+
+对于 <Icon icon="fa-brands fa-apple" /> macOS，你需要手动将键盘配对至电脑。
+
+### 手动配对步骤 {#manually-pairing}
+
+<Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-1" style={{color: "#cc9e75",}} /> 确认 Elysium 处于 BLE 模式 <sup>[<Icon icon="fa-solid fa-compass" /> 怎么做？](/docs-elysium/tri-mode/mode-switch/#select-ble-mode)</sup>，然后按 <kbd>**fn**</kbd> + <kbd>**X**</kbd> 解除与其他设备的配对。
+
+<Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-2" style={{color: "#cc9e75",}} /> 根据下方视频的步骤配对键盘：
+
+<ReactPlayer playing controls height="100%" url={swift_pair_tuts_4} />
+
+> <text className="quote-text">前往“系统设置”。  
+选择左侧边栏中的“<Icon icon="fa-brands fa-bluetooth" /> 蓝牙”。  
+选择“Elysium”。</text>
+
+  </TabItem>
+</Tabs>
+
+## 解除配对 {#unpairing}
+
+确认 Elysium 处于 BLE 模式 <sup>[<Icon icon="fa-solid fa-compass" /> 怎么做？](/docs-elysium/tri-mode/mode-switch/#select-ble-mode)</sup>，然后按 <kbd>**fn**</kbd> + <kbd>**X**</kbd> 解除配对。

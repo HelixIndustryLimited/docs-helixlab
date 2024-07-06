@@ -1,0 +1,64 @@
+---
+sidebar_position: 1
+description: 学习如何为主控更新固件
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# 主控固件更新  {#mcu-firmware-update}
+
+固件是运行在键盘微控制器中的软件。通过固件更新，可以体验新版本中的功能，或者对 BUG 进行修复。
+
+:::tip
+
+固件更新不受固件版本号的限制，可随意越级、降级更新。
+
+:::
+
+:::warning
+
+固件更新后，键盘上存储的个人设置将被全部还原为初始状态，例如 RGB 矩阵设置、VIA 自定义设置等。
+
+:::
+
+## 更新步骤 {#updating-step}
+
+<Tabs queryString="pcb-variant">
+  <TabItem value="hotswap" label="热插拔" default>
+
+<Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-1" style={{color: "#cc9e75",}} />  从 [固件](/docs-elysium/downloads/firmware) 页面下载固件。
+
+<Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-2" style={{color: "#cc9e75",}} /> 在你的电脑上下载并安装 QMK Toolbox 软件。
+
+| 版本 | <Icon icon="fa-brands fa-windows" /> Windows | <Icon icon="fa-brands fa-apple" /> macOS |
+| --- | --- | --- |
+| 0.3.3 | <Icon icon="fa-solid fa-circle-down" /> [下载](https://github.com/qmk/qmk_toolbox/releases/download/0.3.3/qmk_toolbox_install.exe) | <Icon icon="fa-solid fa-circle-down" /> [下载](https://github.com/qmk/qmk_toolbox/releases/download/0.3.3/QMK.Toolbox.pkg) |
+
+:::tip
+
+上方提供的下载链接来自 <Icon icon="fa-brands fa-github" /> [Github](https://github.com/qmk/qmk_toolbox/releases)，如果下载速度过慢，可从 Helix Lab QQ 群下载。
+
+:::
+
+<Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-3" style={{color: "#cc9e75",}} /> 打开 QMK Toolbox，在 `Local file` 一栏中载入固件所在的地址。
+
+<Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-4" style={{color: "#cc9e75",}} /> 将键盘通过 USB 数据线连接到电脑主机，并让键盘进入引导模式，下图所示的绿色按键为引导模式键。
+
+![](./img/elysium_keycodes_boot.svg)
+
+按下组合键 <kbd>**fn**</kbd> + <kbd>**⇧shift**</kbd> + <kbd>**esc**</kbd>，则键盘会进入引导模式。
+
+<Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-5" style={{color: "#cc9e75",}} /> 如果键盘已经正确进入引导模式，在 QMK Toolbox 中你会看到如下的黄色小字：
+
+<p className="special-text"> STM32 DFU device connected: STMicroelectronics STM32  BOOTLOADER (0483:DF11:2200) </p>
+
+<Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-6" style={{color: "#cc9e75",}} /> 点击 QMK Toolbox 中的 `Flash` 按钮，等待约 10 秒后，烧录即可完成。
+
+  </TabItem>
+  <TabItem value="soldered" label="焊接">
+    
+    <Icon icon="fa-solid fa-minus" />
+
+  </TabItem>
+</Tabs>
