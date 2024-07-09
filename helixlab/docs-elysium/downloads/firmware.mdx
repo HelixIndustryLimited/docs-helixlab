@@ -16,29 +16,42 @@ VIA json 的使用方法，详见 [连接 VIA](/docs-elysium/via/conect-via) 章
 
 :::tip
 
-查看键盘当前所运行的固件版本：
+<details>
+  <summary> <Icon icon="fa-solid fa-file-circle-question" /> 查看键盘当前所运行的固件版本</summary>
 
 打开任何一个可以提供输入的软件，如记事本、浏览器地址栏等，在键盘上按下组合键 <kbd>**fn**</kbd> + <kbd>**V**</kbd>，输入框中会出现一个数字或字母，代表固件版本**代号**。例如，代号为 0 意味着固件版本为 1.0.0。
+
+</details>
+
+<details>
+  <summary> <Icon icon="fa-solid fa-file-circle-question" /> 后缀名的含义</summary>
+
+`_ll`: **Low Latency**，用更短的消抖时间和更激进的消抖算法换取低延迟。详见 [延迟](/docs-elysium/miscellaneous/latency) 章节。
+
+`_u8`: **USB 8kHz**，启用8kHz USB 轮询率，有助于降低延迟，但会导致电脑 CPU 占用率更高。
+
+</details>
 
 :::
 
 :::warning
 
-对于 VIA 用户，你的固件版本与 VIA json 版本务必对应。
+对于 VIA 用户，你的固件版本与 VIA json 版本必须对应，否则 VIA 不能识别你的键盘。
 
 :::
 
 <Tabs queryString="pcb-variant">
   <TabItem value="hotswap" label="热插拔" default>
 
-    | 固件版本 | VIA json | 更新内容 | 代号 |
+    | 固件版本 | VIA json | 备注 | 代号 |
     |---|---| --- | --- |
     | <Icon icon="fa-solid fa-circle-down" /> [`1.0.0`](https://google.com) | <Icon icon="fa-solid fa-circle-down" /> [`1.0.0`](https://google.com) | <Icon icon="fa-solid fa-floppy-disk" /> [record](https://google.com) | 0 |
+    | <Icon icon="fa-solid fa-circle-down" /> [`1.0.0_ll`](https://google.com) | <Icon icon="fa-solid fa-circle-down" /> [`1.0.0`](https://google.com) | <Icon icon="fa-solid fa-floppy-disk" /> [record](https://google.com) | 0 |
 
   </TabItem>
   <TabItem value="soldered" label="焊接">
     
-    | 固件版本 | VIA json | 更新内容 | 代号 |
+    | 固件版本 | VIA json | 备注 | 代号 |
     |---|---| --- | --- |
     | <Icon icon="fa-solid fa-minus" /> | <Icon icon="fa-solid fa-minus" /> | <Icon icon="fa-solid fa-minus" /> | 0 |
 
