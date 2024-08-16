@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_0" data-name="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 266.02">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        letter-spacing: .05em;
+      }
+
+      .cls-1, .cls-3 {
+        fill: #e3e3e3;
+        font-family: HelveticaNeue, 'Helvetica Neue';
+        font-size: 12px;
+      }
+
+      .cls-4 {
+        fill: #272729;
+      }
+
+      .cls-4, .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-6 {
+        letter-spacing: .03em;
+      }
+
+      .cls-5 {
+        fill: #1a8e78;
+      }
+    </style>
+  </defs>
+  <rect class="cls-4" width="50" height="50" rx="2.83" ry="2.83"/>
+  <rect class="cls-4" x="54" width="50" height="50" rx="2.83" ry="2.83"/>
+  <rect class="cls-4" x="108" width="50" height="50" rx="2.83" ry="2.83"/>
+  <rect class="cls-4" x="162" width="50" height="50" rx="2.83" ry="2.83"/>
+  <rect class="cls-4" y="54" width="50" height="50" rx="2.83" ry="2.83"/>
+  <rect class="cls-4" x="54" y="54" width="50" height="50" rx="2.83" ry="2.83"/>
+  <rect class="cls-4" x="108" y="54" width="50" height="50" rx="2.83" ry="2.83"/>
+  <rect class="cls-4" y="108" width="50" height="50" rx="2.83" ry="2.83"/>
+  <rect class="cls-4" x="54" y="108" width="50" height="50" rx="2.83" ry="2.83"/>
+  <rect class="cls-4" x="108" y="108" width="50" height="50" rx="2.83" ry="2.83"/>
+  <rect class="cls-4" y="162.02" width="50" height="50" rx="2.83" ry="2.83"/>
+  <rect class="cls-4" x="54" y="162.02" width="50" height="50" rx="2.83" ry="2.83"/>
+  <rect class="cls-5" x="108" y="162.02" width="50" height="50" rx="2.83" ry="2.83"/>
+  <rect class="cls-4" x="108" y="216" width="50" height="50" rx="2.83" ry="2.83"/>
+  <rect class="cls-4" x="162" y="54" width="50" height="104" rx="2.83" ry="2.83"/>
+  <rect class="cls-4" x="162" y="162.02" width="50" height="104" rx="2.83" ry="2.83"/>
+  <rect class="cls-4" y="216" width="104" height="50" rx="2.83" ry="2.83"/>
+  <rect class="cls-5" y="162" width="50" height="50" rx="2.83" ry="2.83"/>
+  <rect class="cls-5" x="54" y="162" width="50" height="50" rx="2.83" ry="2.83"/>
+  <text class="cls-3" transform="translate(8.21 191.23)"><tspan class="cls-2" x="0" y="0">on/o</tspan><tspan class="cls-6" x="26.84" y="0">f</tspan><tspan class="cls-2" x="30.78" y="0">f</tspan></text>
+  <text class="cls-1" transform="translate(62.68 191.23)"><tspan x="0" y="0">mode</tspan></text>
+  <text class="cls-1" transform="translate(122.85 191.23)"><tspan x="0" y="0">hue</tspan></text>
+</svg>

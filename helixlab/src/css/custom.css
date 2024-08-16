@@ -34,13 +34,15 @@
 }
 
 img[alt=mode-switch_drawing] { width: 200px; }
+img[alt=ankh_pcb_drawing] { width: 350px; }
+img[alt=gelix_drawing] { width: 500px; }
 
 .quote-text {
   color: rgb(137, 137, 137);
 }
 
 .special-text {
-  color: #efc11a;
+  color: #e59813;
   font-family: "DejavuSansMono";
 }
 

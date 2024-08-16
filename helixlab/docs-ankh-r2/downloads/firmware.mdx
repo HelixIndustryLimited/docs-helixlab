@@ -1,0 +1,39 @@
+---
+sidebar_position: 1
+description: 获取固件及 VIA 配置文件
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# 固件 {#firmware}
+
+## 主控固件及 VIA JSON {#firmware-of-mcu-and-via-json}
+
+:::warning
+
+使用 [VIA](/docs-elysium/via/conect-via) 时，你的固件版本与 VIA json 版本必须对应，否则 VIA 不能识别你的键盘。我们建议访问 [via.helix.site](https://via.helix.site)，因为该网站无需上传 json（仅限 Helix Lab 的新产品）。
+
+:::
+
+固件的使用方法，详见 [主控固件更新](/docs-elysium/firmware-update/mcu-firmware-update) 章节。
+
+VIA json 的使用方法，详见 [连接 VIA](/docs-elysium/via/conect-via) 章节。
+
+<Tabs queryString="pcb-variant">
+  <TabItem value="hotswap" label="热插拔" default>
+
+    | 固件版本 | VIA json | 备注 | 代号 |
+    |---|---| --- | --- |
+    | <Icon icon="fa-solid fa-circle-down" /> [`1.0.0`](https://google.com) | <Icon icon="fa-solid fa-circle-down" /> [`1.0.0`](https://google.com) | <Icon icon="fa-solid fa-floppy-disk" /> [record](https://google.com) | 0 |
+    | <Icon icon="fa-solid fa-circle-down" /> [`1.0.0_ll`](https://google.com) | <Icon icon="fa-solid fa-circle-down" /> [`1.0.0`](https://google.com) | <Icon icon="fa-solid fa-floppy-disk" /> [record](https://google.com) | 0 |
+
+  </TabItem>
+  <TabItem value="soldered" label="焊接">
+    
+    | 固件版本 | VIA json | 备注 | 代号 |
+    |---|---| --- | --- |
+    | <Icon icon="fa-solid fa-minus" /> | <Icon icon="fa-solid fa-minus" /> | <Icon icon="fa-solid fa-minus" /> | 0 |
+
+  </TabItem>
+</Tabs>

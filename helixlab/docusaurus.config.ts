@@ -55,6 +55,11 @@ const config: Config = {
         },
         blog: {
           showReadingTime: false,
+          path: 'blog',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
+          blogSidebarCount: 'ALL',
+          blogSidebarTitle: 'All posts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
@@ -80,6 +85,15 @@ const config: Config = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'docs-ankh-r2',
+        path: 'docs-ankh-r2',
+        routeBasePath: 'docs-ankh-r2',
+        sidebarPath: './sidebars-ankh-r2.ts',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'docs-elysium',
         path: 'docs-elysium',
         routeBasePath: 'docs-elysium',
@@ -93,6 +107,24 @@ const config: Config = {
         path: 'docs-test',
         routeBasePath: 'docs-test',
         sidebarPath: './sidebars-test.ts',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        /**
+         * Required for any multi-instance plugin
+         */
+        id: 'confidential-blog',
+        /**
+         * URL route for the blog section of your site.
+         * *DO NOT* include a trailing slash.
+         */
+        routeBasePath: 'confidential',
+        /**
+         * Path to data on filesystem relative to site dir.
+         */
+        path: './confidential',
       },
     ],
     [
@@ -117,6 +149,7 @@ const config: Config = {
         alt: 'My Site Logo',
         src: 'img/logo-helixlab.svg',
       },
+      hideOnScroll: true,
       items: [
         // {
         //   type: 'docSidebar',
@@ -130,6 +163,13 @@ const config: Config = {
           position: 'left',
           docsPluginId: 'docs-products',
           activeBasePath: 'docs-products',
+        },
+        {
+          label: 'Ankh™ R2',
+          to: 'docs-ankh-r2/intro',
+          position: 'left',
+          docsPluginId: 'docs-ankh-r2',
+          activeBasePath: 'docs-ankh-r2',
         },
         {
           label: 'Elysium™',

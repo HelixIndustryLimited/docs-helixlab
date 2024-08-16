@@ -18,7 +18,7 @@ import TabItem from '@theme/TabItem';
 
 :::warning
 
-固件更新后，键盘上存储的个人设置将被全部还原为初始状态，例如 RGB 矩阵设置、VIA 自定义设置等。
+固件更新后，键盘上存储的个人设置将被全部还原为初始状态，例如 RGB 矩阵设置、VIA 自定义设置等。如果 [无线模式选择器](/docs-elysium/tri-mode/mode-switch#switch-to-wireless-mode) 位于中间，那么其默认为 BLE 无线模式。
 
 :::
 
@@ -27,7 +27,7 @@ import TabItem from '@theme/TabItem';
 <Tabs queryString="pcb-variant">
   <TabItem value="hotswap" label="热插拔" default>
 
-<Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-1" style={{color: "#cc9e75",}} />  从 [固件](/docs-elysium/downloads/firmware) 页面下载固件。
+<Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-1" style={{color: "#cc9e75",}} />  从 [固件](/docs-elysium/downloads/firmware?pcb-variant=hotswap) 页面下载固件。
 
 <Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-2" style={{color: "#cc9e75",}} /> 在你的电脑上下载并安装 QMK Toolbox 软件。
 
@@ -58,7 +58,11 @@ import TabItem from '@theme/TabItem';
   </TabItem>
   <TabItem value="soldered" label="焊接">
     
-    <Icon icon="fa-solid fa-minus" />
+    <Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-1" style={{color: "#cc9e75",}} />  从 [固件](/docs-elysium/downloads/firmware?pcb-variant=soldered) 页面下载固件。请检查固件的后缀名，确保为 `.uf2`。
+
+    <Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-2" style={{color: "#cc9e75",}} />  断开 USB 数据线，按住键盘上的 <kbd>**esc**</kbd> 的同时插入 USB 数据线。
+
+    <Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-3" style={{color: "#cc9e75",}} />  你的电脑上会弹出一个名为 `BOOT` 的新卷宗，将固件拖入此卷宗即可完成烧录。
 
   </TabItem>
 </Tabs>

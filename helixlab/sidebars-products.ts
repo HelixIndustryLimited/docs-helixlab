@@ -20,7 +20,12 @@ const sidebars: SidebarsConfig = {
       collapsible: true,
       collapsed: false,
       items: [
-        'aaru-65', 'aaru-tkl', 'ankh-numpad',
+        'aaru-65', 'aaru-tkl', 'ankh-numpad-r1',
+        {
+          type: 'link',
+          label: 'Ankh Numpad R2',
+          href: '/docs-ankh-r2/intro', // The external URL
+        },
         {
           type: 'link',
           label: 'Elysium',

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 169.18 124.43">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: HelveticaNeue, 'Helvetica Neue';
+        font-size: 7.1px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #f9f9f9;
+      }
+
+      .cls-3, .cls-2, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-3, .cls-5 {
+        fill: #2d2d2d;
+      }
+
+      .cls-4 {
+        fill: #eaa23b;
+      }
+
+      .cls-5 {
+        font-family: cream-DEMO, cream;
+        font-size: 14.37px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-3" width="169.18" height="124.43"/>
+  <path class="cls-4" d="M71.96,49.59c-6.98,0-12.63,5.66-12.63,12.63s5.66,12.63,12.63,12.63,12.63-5.66,12.63-12.63-5.66-12.63-12.63-12.63ZM71.96,70.43c-4.54,0-8.21-3.68-8.21-8.21s3.68-8.21,8.21-8.21,8.21,3.68,8.21,8.21-3.68,8.21-8.21,8.21Z"/>
+  <path class="cls-4" d="M104.04,49.59c-6.98,0-12.63,5.66-12.63,12.63s5.66,12.63,12.63,12.63,12.63-5.66,12.63-12.63-5.66-12.63-12.63-12.63ZM104.04,70.43c-4.54,0-8.21-3.68-8.21-8.21s3.68-8.21,8.21-8.21,8.21,3.68,8.21,8.21-3.68,8.21-8.21,8.21Z"/>
+  <path class="cls-4" d="M136.13,49.59c-6.98,0-12.63,5.66-12.63,12.63s5.66,12.63,12.63,12.63,12.63-5.66,12.63-12.63-5.66-12.63-12.63-12.63ZM136.13,70.43c-4.54,0-8.21-3.68-8.21-8.21s3.68-8.21,8.21-8.21,8.21,3.68,8.21,8.21-3.68,8.21-8.21,8.21Z"/>
+  <path class="cls-4" d="M27.24,49.59v25.26h25.26v-25.26h-25.26ZM39.87,70.43c-4.54,0-8.21-3.68-8.21-8.21s3.68-8.21,8.21-8.21,8.21,3.68,8.21,8.21-3.68,8.21-8.21,8.21Z"/>
+  <polygon class="cls-2" points="78.73 100.97 66.35 100.97 66.35 84.83 72.54 78.87 78.73 84.83 78.73 100.97"/>
+  <text class="cls-5" transform="translate(67.09 97.33)"><tspan x="0" y="0">C</tspan></text>
+  <text class="cls-1" transform="translate(31.51 114.17)"><tspan x="0" y="0">GND</tspan></text>
+  <text class="cls-1" transform="translate(64.44 114.17)"><tspan x="0" y="0">SWC</tspan></text>
+  <text class="cls-1" transform="translate(96.55 114.17)"><tspan x="0" y="0">SWD</tspan></text>
+  <text class="cls-1" transform="translate(129.07 114.17)"><tspan x="0" y="0">VCC</tspan></text>
+</svg>

@@ -1,0 +1,54 @@
+---
+sidebar_position: 1
+description: 学习如何连接 VIA
+---
+
+import ReactPlayer from 'react-player'
+import via_tuts_1 from './img/st732.mp4'
+
+# 连接 VIA  {#connect-via}
+
+import {PlaygroundCardsRow} from '@site/src/components/Playground';
+
+<PlaygroundCardsRow />
+
+:::info
+
+使用 VIA，须满足以下条件：
+
+* 通过 USB 数据线把键盘连接到电脑。
+* 需要 Chrome、Edge 等主流浏览器。
+
+:::
+
+## Helix Version {#helix-version}
+
+前往 [via.helix.site](https://via.helix.site/)。
+
+> <text className="quote-text"> <Icon icon="fa-solid fa-caret-right" /> 点击“Authorize Device”，在浏览器的弹出窗口中选择“Ankh”，点击“连接”。</text>
+
+## Offical Version {#official-version}
+
+前往 [usevia.app](https://usevia.app/)。
+
+下方视频演示了如何以手动上传 json 的方式将键盘连接到 VIA。
+
+<ReactPlayer playing controls height="100%" muted={true} url={via_tuts_1} />
+
+> <text className="quote-text"> <Icon icon="fa-solid fa-caret-right" /> 前往“[SETTINGS](https://usevia.app/settings)”页面。  
+<Icon icon="fa-solid fa-caret-right" /> 打开“Show Design tab”选项。  
+<Icon icon="fa-solid fa-caret-right" /> 前往“[DESIGN](https://usevia.app/design)”页面，上传与你所使用的固件版本相对应的 [<Icon icon="fa-solid fa-file-arrow-down" /> json 文件](/docs-ankh-r2/downloads/firmware)。同时确保“Use V2 definitions(deprecated)”选项已经**关闭**。  
+<Icon icon="fa-solid fa-caret-right" /> 在浏览器的弹出窗口中选择“Ankh”，点击“连接”。  
+<Icon icon="fa-solid fa-caret-right" /> 前往“[CONFIGURE](https://usevia.app/)”页面，进行改键等操作。</text>
+
+:::warning
+
+发生如下几种情况之一，你的键盘将无法连接到 VIA：
+
+* USB 数据线未连接。
+
+* 打开了“DESIGN”页面中的“Use V2 definitions(deprecated)”选项。
+
+* 键盘所运行的固件版本和你上传的 json 版本和不能对应。
+
+:::
