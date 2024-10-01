@@ -46,7 +46,19 @@ img[alt=gelix_drawing] { width: 500px; }
   font-family: "DejavuSansMono";
 }
 
+.step-number-text {
+  color: #cc9e75;
+  font-family: "RubikMonoOne-Regular";
+  font-size: large;
+  padding-top: 5px;
+}
+
 @font-face {
   font-family: "DejavuSansMono";
   src: url('/static/DejaVuSansMono.woff') format('woff');
+}
+
+@font-face {
+  font-family: "RubikMonoOne-Regular";
+  src: url('/static/RubikMonoOne-Regular.woff') format('woff');
 }

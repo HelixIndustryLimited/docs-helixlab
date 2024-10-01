@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-description: 学习如何为主控更新固件
+description: 主控更新固件
 ---
 
 import Tabs from '@theme/Tabs';
@@ -8,7 +8,7 @@ import TabItem from '@theme/TabItem';
 
 # 主控固件更新  {#mcu-firmware-update}
 
-固件是运行在键盘微控制器中的软件。通过固件更新，可以体验新版本中的功能，或者对 BUG 进行修复。
+固件是键盘的微控制器中运行的程序。新功能的加入或者 bug 的修复都是通过固件更新完成的。
 
 :::tip
 
@@ -18,7 +18,7 @@ import TabItem from '@theme/TabItem';
 
 :::warning
 
-固件更新后，键盘上存储的个人设置将被全部还原为初始状态，例如 RGB 矩阵设置、VIA 自定义设置等。如果 [无线模式选择器](/docs-elysium/tri-mode/mode-switch#switch-to-wireless-mode) 位于中间，那么其默认为 BLE 无线模式。
+固件更新后，键盘上存储的个人设置将被全部还原为初始状态，例如 RGB 矩阵设置、VIA 自定义设置等，但 BLE 和 2G4 配对信息不会被清除。
 
 :::
 
@@ -27,9 +27,13 @@ import TabItem from '@theme/TabItem';
 <Tabs queryString="pcb-variant">
   <TabItem value="hotswap" label="热插拔" default>
 
-<Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-1" style={{color: "#cc9e75",}} />  从 [固件](/docs-elysium/downloads/firmware?pcb-variant=hotswap) 页面下载固件。
+<p className="step-number-text"> I. </p>
 
-<Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-2" style={{color: "#cc9e75",}} /> 在你的电脑上下载并安装 QMK Toolbox 软件。
+  从 [固件](/docs-elysium/downloads/firmware?pcb-variant=hotswap) 页面下载固件。
+
+<p className="step-number-text"> II. </p>
+
+ 在你的电脑上下载并安装 QMK Toolbox 软件。
 
 | 版本 | <Icon icon="fa-brands fa-windows" /> Windows | <Icon icon="fa-brands fa-apple" /> macOS |
 | --- | --- | --- |
@@ -41,19 +45,25 @@ import TabItem from '@theme/TabItem';
 
 :::
 
-<Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-3" style={{color: "#cc9e75",}} /> 打开 QMK Toolbox，在 `Local file` 一栏中载入固件所在的地址。
+<p className="step-number-text"> III. </p>
 
-<Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-4" style={{color: "#cc9e75",}} /> 将键盘通过 USB 数据线连接到电脑主机，并让键盘进入引导模式，下图所示的绿色按键为引导模式键。
+ 打开 QMK Toolbox，在 `Local file` 一栏中载入固件所在的地址。
+
+<p className="step-number-text"> IU. </p>
+
+ 将键盘通过 USB 数据线连接到电脑主机，并让键盘进入引导模式，下图所示的绿色按键为引导模式键。
 
 ![](./img/elysium_keycodes_boot.svg)
 
 按下组合键 <kbd>**fn**</kbd> + <kbd>**⇧shift**</kbd> + <kbd>**esc**</kbd>，则键盘会进入引导模式。
 
-<Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-5" style={{color: "#cc9e75",}} /> 如果键盘已经正确进入引导模式，在 QMK Toolbox 中你会看到如下的黄色小字：
+<p className="step-number-text"> UI. </p> 如果键盘已经正确进入引导模式，在 QMK Toolbox 中你会看到如下的黄色小字：
 
 <p className="special-text"> STM32 DFU device connected: STMicroelectronics STM32  BOOTLOADER (0483:DF11:2200) </p>
 
-<Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-6" style={{color: "#cc9e75",}} /> 点击 QMK Toolbox 中的 `Flash` 按钮，等待约 10 秒后，烧录即可完成。
+<p className="step-number-text"> UII. </p>
+
+ 点击 QMK Toolbox 中的 `Flash` 按钮，等待约 10 秒后，烧录即可完成。
 
   </TabItem>
   <TabItem value="soldered" label="焊接">

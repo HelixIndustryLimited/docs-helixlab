@@ -1,28 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="_0" data-name="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 266.02">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #272729;
-        stroke-width: 0px;
-      }
-    </style>
-  </defs>
-  <rect class="cls-1" width="50" height="50" rx="2.83" ry="2.83"/>
-  <rect class="cls-1" x="54" width="50" height="50" rx="2.83" ry="2.83"/>
-  <rect class="cls-1" x="108" width="50" height="50" rx="2.83" ry="2.83"/>
-  <rect class="cls-1" x="162" width="50" height="50" rx="2.83" ry="2.83"/>
-  <rect class="cls-1" y="54" width="50" height="50" rx="2.83" ry="2.83"/>
-  <rect class="cls-1" x="54" y="54" width="50" height="50" rx="2.83" ry="2.83"/>
-  <rect class="cls-1" x="108" y="54" width="50" height="50" rx="2.83" ry="2.83"/>
-  <rect class="cls-1" y="108" width="50" height="50" rx="2.83" ry="2.83"/>
-  <rect class="cls-1" x="54" y="108" width="50" height="50" rx="2.83" ry="2.83"/>
-  <rect class="cls-1" x="108" y="108" width="50" height="50" rx="2.83" ry="2.83"/>
-  <rect class="cls-1" y="162.02" width="50" height="50" rx="2.83" ry="2.83"/>
-  <rect class="cls-1" x="54" y="162.02" width="50" height="50" rx="2.83" ry="2.83"/>
-  <rect class="cls-1" x="108" y="162.02" width="50" height="50" rx="2.83" ry="2.83"/>
-  <rect class="cls-1" x="108" y="216" width="50" height="50" rx="2.83" ry="2.83"/>
-  <rect class="cls-1" x="162" y="54" width="50" height="104" rx="2.83" ry="2.83"/>
-  <rect class="cls-1" x="162" y="162.02" width="50" height="104" rx="2.83" ry="2.83"/>
-  <rect class="cls-1" y="216" width="104" height="50" rx="2.83" ry="2.83"/>
+  <rect width="50" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect x="54" width="50" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect x="108" width="50" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect x="162" width="50" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect y="54" width="50" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect x="54" y="54" width="50" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect x="108" y="54" width="50" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect y="108" width="50" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect x="54" y="108" width="50" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect x="108" y="108" width="50" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect y="162.02" width="50" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect x="54" y="162.02" width="50" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect x="108" y="162.02" width="50" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect x="108" y="216" width="50" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect x="162" y="54" width="50" height="104" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect x="162" y="162.02" width="50" height="104" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect y="216" width="104" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
 </svg>

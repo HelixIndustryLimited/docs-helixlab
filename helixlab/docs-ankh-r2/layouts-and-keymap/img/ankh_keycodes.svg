@@ -1,59 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="_0" data-name="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 266.02">
-  <defs>
-    <style>
-      .cls-1 {
-        letter-spacing: .05em;
-      }
-
-      .cls-1, .cls-2 {
-        fill: #e3e3e3;
-        font-family: HelveticaNeue, 'Helvetica Neue';
-        font-size: 12px;
-      }
-
-      .cls-3 {
-        fill: #272729;
-        stroke-width: 0px;
-      }
-
-      .cls-2 {
-        letter-spacing: .05em;
-      }
-    </style>
-  </defs>
-  <rect class="cls-3" width="50" height="50" rx="2.83" ry="2.83"/>
-  <rect class="cls-3" x="54" width="50" height="50" rx="2.83" ry="2.83"/>
-  <rect class="cls-3" x="108" width="50" height="50" rx="2.83" ry="2.83"/>
-  <rect class="cls-3" x="162" width="50" height="50" rx="2.83" ry="2.83"/>
-  <rect class="cls-3" y="54" width="50" height="50" rx="2.83" ry="2.83"/>
-  <rect class="cls-3" x="54" y="54" width="50" height="50" rx="2.83" ry="2.83"/>
-  <rect class="cls-3" x="108" y="54" width="50" height="50" rx="2.83" ry="2.83"/>
-  <rect class="cls-3" y="108" width="50" height="50" rx="2.83" ry="2.83"/>
-  <rect class="cls-3" x="54" y="108" width="50" height="50" rx="2.83" ry="2.83"/>
-  <rect class="cls-3" x="108" y="108" width="50" height="50" rx="2.83" ry="2.83"/>
-  <rect class="cls-3" y="162.02" width="50" height="50" rx="2.83" ry="2.83"/>
-  <rect class="cls-3" x="54" y="162.02" width="50" height="50" rx="2.83" ry="2.83"/>
-  <rect class="cls-3" x="108" y="162.02" width="50" height="50" rx="2.83" ry="2.83"/>
-  <rect class="cls-3" x="108" y="216" width="50" height="50" rx="2.83" ry="2.83"/>
-  <rect class="cls-3" x="162" y="54" width="50" height="104" rx="2.83" ry="2.83"/>
-  <rect class="cls-3" x="162" y="162.02" width="50" height="104" rx="2.83" ry="2.83"/>
-  <rect class="cls-3" y="216" width="104" height="50" rx="2.83" ry="2.83"/>
-  <text class="cls-1" transform="translate(10.82 22.68)"><tspan x="0" y="0">back</tspan><tspan x="-3.41" y="14.4">space</tspan></text>
-  <text class="cls-1" transform="translate(21.5 84.46)"><tspan x="0" y="0">7</tspan></text>
-  <text class="cls-1" transform="translate(75.5 84.46)"><tspan x="0" y="0">8</tspan></text>
-  <text class="cls-1" transform="translate(129.5 84.46)"><tspan x="0" y="0">9</tspan></text>
-  <text class="cls-1" transform="translate(21.5 138.46)"><tspan x="0" y="0">4</tspan></text>
-  <text class="cls-1" transform="translate(75.5 138.46)"><tspan x="0" y="0">5</tspan></text>
-  <text class="cls-1" transform="translate(129.5 138.46)"><tspan x="0" y="0">6</tspan></text>
-  <text class="cls-1" transform="translate(21.5 191.7)"><tspan x="0" y="0">1</tspan></text>
-  <text class="cls-1" transform="translate(48.66 245.6)"><tspan x="0" y="0">0</tspan></text>
-  <text class="cls-1" transform="translate(131.33 245.6)"><tspan x="0" y="0">.</tspan></text>
-  <text class="cls-1" transform="translate(75.5 191.7)"><tspan x="0" y="0">2</tspan></text>
-  <text class="cls-1" transform="translate(129.5 191.7)"><tspan x="0" y="0">3</tspan></text>
-  <text class="cls-1" transform="translate(183.23 108.06)"><tspan x="0" y="0">+</tspan></text>
-  <text class="cls-1" transform="translate(171.97 216)"><tspan x="0" y="0">enter</tspan></text>
-  <text class="cls-2" transform="translate(76.83 30.73)"><tspan x="0" y="0">/</tspan></text>
-  <text class="cls-1" transform="translate(130.72 32.86)"><tspan x="0" y="0">*</tspan></text>
-  <text class="cls-1" transform="translate(184.5 29.04)"><tspan x="0" y="0">-</tspan></text>
+  <rect width="50" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect x="54" width="50" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect x="108" width="50" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect x="162" width="50" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect y="54" width="50" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect x="54" y="54" width="50" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect x="108" y="54" width="50" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect y="108" width="50" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect x="54" y="108" width="50" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect x="108" y="108" width="50" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect y="162.02" width="50" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect x="54" y="162.02" width="50" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect x="108" y="162.02" width="50" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect x="108" y="216" width="50" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect x="162" y="54" width="50" height="104" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect x="162" y="162.02" width="50" height="104" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <rect y="216" width="104" height="50" rx="2.83" ry="2.83" style="fill: #272729; stroke-width: 0px;"/>
+  <text transform="translate(12.44 22.68)" style="fill: #e3e3e3; font-family: HelveticaNeue, &apos;Helvetica Neue&apos;; font-size: 12px; letter-spacing: .05em;"><tspan x="0" y="0">num</tspan><tspan x=".38" y="14.4">lock</tspan></text>
+  <text transform="translate(21.5 84.46)" style="fill: #e3e3e3; font-family: HelveticaNeue, &apos;Helvetica Neue&apos;; font-size: 12px; letter-spacing: .05em;"><tspan x="0" y="0">7</tspan></text>
+  <text transform="translate(75.5 84.46)" style="fill: #e3e3e3; font-family: HelveticaNeue, &apos;Helvetica Neue&apos;; font-size: 12px; letter-spacing: .05em;"><tspan x="0" y="0">8</tspan></text>
+  <text transform="translate(129.5 84.46)" style="fill: #e3e3e3; font-family: HelveticaNeue, &apos;Helvetica Neue&apos;; font-size: 12px; letter-spacing: .05em;"><tspan x="0" y="0">9</tspan></text>
+  <text transform="translate(21.5 138.46)" style="fill: #e3e3e3; font-family: HelveticaNeue, &apos;Helvetica Neue&apos;; font-size: 12px; letter-spacing: .05em;"><tspan x="0" y="0">4</tspan></text>
+  <text transform="translate(75.5 138.46)" style="fill: #e3e3e3; font-family: HelveticaNeue, &apos;Helvetica Neue&apos;; font-size: 12px; letter-spacing: .05em;"><tspan x="0" y="0">5</tspan></text>
+  <text transform="translate(129.5 138.46)" style="fill: #e3e3e3; font-family: HelveticaNeue, &apos;Helvetica Neue&apos;; font-size: 12px; letter-spacing: .05em;"><tspan x="0" y="0">6</tspan></text>
+  <text transform="translate(21.5 191.7)" style="fill: #e3e3e3; font-family: HelveticaNeue, &apos;Helvetica Neue&apos;; font-size: 12px; letter-spacing: .05em;"><tspan x="0" y="0">1</tspan></text>
+  <text transform="translate(48.66 245.6)" style="fill: #e3e3e3; font-family: HelveticaNeue, &apos;Helvetica Neue&apos;; font-size: 12px; letter-spacing: .05em;"><tspan x="0" y="0">0</tspan></text>
+  <text transform="translate(131.33 245.6)" style="fill: #e3e3e3; font-family: HelveticaNeue, &apos;Helvetica Neue&apos;; font-size: 12px; letter-spacing: .05em;"><tspan x="0" y="0">.</tspan></text>
+  <text transform="translate(75.5 191.7)" style="fill: #e3e3e3; font-family: HelveticaNeue, &apos;Helvetica Neue&apos;; font-size: 12px; letter-spacing: .05em;"><tspan x="0" y="0">2</tspan></text>
+  <text transform="translate(129.5 191.7)" style="fill: #e3e3e3; font-family: HelveticaNeue, &apos;Helvetica Neue&apos;; font-size: 12px; letter-spacing: .05em;"><tspan x="0" y="0">3</tspan></text>
+  <text transform="translate(183.23 108.06)" style="fill: #e3e3e3; font-family: HelveticaNeue, &apos;Helvetica Neue&apos;; font-size: 12px; letter-spacing: .05em;"><tspan x="0" y="0">+</tspan></text>
+  <text transform="translate(171.97 216)" style="fill: #e3e3e3; font-family: HelveticaNeue, &apos;Helvetica Neue&apos;; font-size: 12px; letter-spacing: .05em;"><tspan x="0" y="0">enter</tspan></text>
+  <text transform="translate(76.83 30.73)" style="fill: #e3e3e3; font-family: HelveticaNeue, &apos;Helvetica Neue&apos;; font-size: 12px; letter-spacing: .05em;"><tspan x="0" y="0">/</tspan></text>
+  <text transform="translate(130.72 32.86)" style="fill: #e3e3e3; font-family: HelveticaNeue, &apos;Helvetica Neue&apos;; font-size: 12px; letter-spacing: .05em;"><tspan x="0" y="0">*</tspan></text>
+  <text transform="translate(184.5 29.04)" style="fill: #e3e3e3; font-family: HelveticaNeue, &apos;Helvetica Neue&apos;; font-size: 12px; letter-spacing: .05em;"><tspan x="0" y="0">-</tspan></text>
 </svg>

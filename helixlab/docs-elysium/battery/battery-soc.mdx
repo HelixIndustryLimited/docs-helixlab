@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-description: 了解如何获取电量百分比
+description: 电量百分比
 ---
 
 import Tabs from '@theme/Tabs';
@@ -14,23 +14,31 @@ import TabItem from '@theme/TabItem';
 
 :::
 
+---
+
 ## 查看电量百分比 {#check-battery-soc}
 
 <Tabs queryString="mode-variant">
   <TabItem value="ble" label="BLE" default>
 
-在蓝牙模式下，通常可以从系统的蓝牙连接页面获取电量信息。
+在 BLE 模式下，通常可以从系统的蓝牙设备管理页面获取电量信息。
 
   </TabItem>
   <TabItem value="2g4" label="2G4">
 
-在 2G4 模式下，无法像蓝牙模式那样直接查看电量信息，但可模糊查询电量：
+在 2G4 模式下，无法像 BLE 模式那样直接查看电量信息，但可模糊查询电量：
 
-<Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-1" style={{color: "#cc9e75",}} /> 打开任何一个可以提供输入的软件，如记事本、浏览器地址栏等。
+<p className="step-number-text"> I. </p>
 
-<Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-2" style={{color: "#cc9e75",}} /> 按下组合键 <kbd>**fn**</kbd> + <kbd>**B**</kbd>。
+ 打开任何一个可以提供输入的软件，如记事本。
 
-<Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-3" style={{color: "#cc9e75",}} /> 输入框中会出现一个数字，代表当前剩余电量。例如：出现的数字是 7，代表当前剩余电量在 70-80% 之间。
+<p className="step-number-text"> II. </p>
+
+ 按下组合键 <kbd>**fn**</kbd> + <kbd>**B**</kbd>。
+
+<p className="step-number-text"> III. </p>
+
+键盘会打出一个数字，代表当前剩余电量。例如：出现的数字是 7，代表当前剩余电量在 70-80% 之间。
 
   </TabItem>
 </Tabs>

@@ -1,6 +1,6 @@
 ---
 slug: elysium-hotswap
-title: Elysium 热插拔
+title: Elysium (1123_65) 热插拔主板 工厂刷机流程
 authors: [huanshan]
 tags: [elysium]
 ---
@@ -21,11 +21,11 @@ tags: [elysium]
 
 以下为 Elysium 热插拔的无线模块固件和主控固件，下载后存放在本地。烧录前请仔细核对文件名，不要烧错。
 
-| <Icon icon="fa-brands fa-bluetooth" /> 无线模块-Nordic nRF52840 | <Icon icon="fa-solid fa-microchip" /> 主控-ST STM32L433 | 备注 | 版本 |
-|---|---| --- | --- |
-| | | |
+| <Icon icon="fa-brands fa-bluetooth" /> 无线模块-Nordic nRF52840 | <Icon icon="fa-solid fa-microchip" /> 主控-ST STM32L433 | 备注 |
+|---|---| --- |
+| <Icon icon="fa-solid fa-circle-down" /> [`1.0.0`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helix_nrf52840_elysium_1.0.0.hex?v=1727787348) | <Icon icon="fa-solid fa-circle-down" /> [`1.0.2`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helix_elysium_hotswap_1.0.2.bin?v=1727775881) | <Icon icon="fa-solid fa-minus" /> |
 
-## 烧录无线模块固件 {#flash-wireless-module-firmware}
+## 烧录 nRF 无线模块固件 {#flash-wireless-module-firmware}
 
 :::warning
 
@@ -61,7 +61,7 @@ tags: [elysium]
 
 ![mode-switch_drawing](./switch_dn.png)
 
-* 再把烧录好接收器固件的接收器插上电脑，接收器上的 LED 从呼吸变为常亮，即配对成功。
+* 再把烧录好接收器固件的接收器插上电脑，接收器上的 LED 从呼吸变为常亮，即配对成功。 <p style={{color:'#eb4034'}}> <Icon icon="fa-solid fa-circle-exclamation" /> 完成后，把三挡开关档位调到中间。交付给用户时，档位要保持在中间。</p>
 
 <details>
   <summary> <Icon icon="fa-solid fa-file-circle-question" /> 怎么重新配对</summary>
@@ -74,7 +74,7 @@ tags: [elysium]
 
 </details>
 
-## 烧录主控固件 {#flash-mcu-firmware}
+## 烧录 STM32 主控固件 {#flash-mcu-firmware}
 
 * 按住 PCB 背面的 BOOT 按钮的同时插入 USB 数据线。BOOT 按钮位于标记为 <Icon icon="fa-solid fa-registered" /> 的按钮的上方。
 
