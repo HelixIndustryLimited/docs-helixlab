@@ -217,7 +217,7 @@ const config: Config = {
       appId: 'OBXNFOHOLN',
 
       //  公开 API 密钥：提交它没有危险
-      apiKey: '30d440e2ee5b411b089c1d77acf919c3',
+      apiKey: '449a7495e03a467f9fc3887a17d68e7e',
 
       indexName: 'docs-helix',
 
