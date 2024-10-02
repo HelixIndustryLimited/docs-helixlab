@@ -1,0 +1,87 @@
+---
+sidebar_position: 4
+description: 常见问题
+---
+
+# 常见问题 {#faq}
+
+:::note
+
+本页面内容仅适用于 Elysium 热插拔版本。
+
+:::
+
+---
+
+## 切换模式 {#mode-switch}
+
+<details>
+  <summary> <Icon icon="fa-solid fa-file-circle-question" /> 能否在已连接 USB 数据线的情况下使用无线模式 </summary>
+
+不能。在 USB 数据线连接的情况下，会强制使用 USB 模式，拔除 USB 数据线后，自动切换到无线模式。
+
+</details>
+
+<details>
+  <summary> <Icon icon="fa-solid fa-file-circle-question" /> 用充电宝或者开关电源适配器为键盘充电时，键盘无法使用无线模式 </summary>
+
+因为这种情况会被识别为 USB 模式，所以造成键盘暂时无法使用。建议使用电脑 USB 端口为键盘充电。
+
+</details>
+
+<details>
+  <summary> <Icon icon="fa-solid fa-file-circle-question" /> 能否用 USB 模式和无线模式分别连接到两台主机，并且让两台主机同时接收输入 </summary>
+
+不能。键盘会优先把数据发送给已连接 USB 数据线的主机。
+
+</details>
+
+## BLE {#ble}
+
+<details>
+  <summary> <Icon icon="fa-solid fa-file-circle-question" /> 主机无法搜索到键盘 </summary>
+
+确保[电池开关](/docs-elysium/battery/battery-switch)已经打开，并且已经[切换](/docs-elysium/tri-mode/mode-switch#switch-to-wireless-mode)到 BLE 模式，并确保没有连接任何充电线。若问题依然存在：
+
+短按一下 <kbd>**fn**</kbd> + <kbd>**X**</kbd> 以删除其它设备的配对记忆。若问题依然存在：
+
+短按一下 <kbd>**fn**</kbd> + <kbd>**\\**</kbd> 以进行一次复位操作。若问题依然存在：
+
+找到 PCB 正面的三挡开关（下图中标为红色的元件），检查其档位是否位于正中间，如果不是，请将它调到正中间。
+
+![](img/top_mode.svg)
+
+</details>
+
+<details>
+  <summary> <Icon icon="fa-solid fa-file-circle-question" /> BLE 模式下存在唤醒延时、吞键 </summary>
+
+Elysium 在低功耗休眠期间可以保持与主机的连接，从而实现无延时唤醒，但以下情况例外：
+
+* 在键盘休眠期间，主机离开通信范围或关机。
+
+</details>
+
+## 2G4 {#2g4}
+
+<details>
+  <summary> <Icon icon="fa-solid fa-file-circle-question" /> 无法使用 2G4 模式 </summary>
+
+确保[电池开关](/docs-elysium/battery/battery-switch)已经打开，并且已经[切换](/docs-elysium/tri-mode/mode-switch#switch-to-wireless-mode)到 2G4 模式，并确保没有连接任何充电线。若问题依然存在：
+
+短按一下 <kbd>**fn**</kbd> + <kbd>**\\**</kbd> 以进行一次复位操作。若问题依然存在：
+
+找到 PCB 正面的三挡开关（下图中标为红色的元件），检查其档位是否位于正中间，如果不是，请将它调到正中间。
+
+![](img/top_mode.svg)
+
+若问题依然存在，可以按照[重新配对接收器](/docs-elysium/tri-mode/2g4/2g4-re-pairing)页面的方法重新配对接收器。
+
+</details>
+
+<details>
+  <summary> <Icon icon="fa-solid fa-file-circle-question" /> USB 3.0 会不会干扰接收器 </summary>
+
+10Gbps 速率的 USB 3.0 设备可能会干扰 2.4GHz 频段，但仅当这些设备在使用中时才会产生明显干扰。
+
+</details>
