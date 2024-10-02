@@ -211,6 +211,19 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+
+    algolia: {
+      // Algolia 提供的应用 ID
+      appId: 'OBXNFOHOLN',
+
+      //  公开 API 密钥：提交它没有危险
+      apiKey: '30d440e2ee5b411b089c1d77acf919c3',
+
+      indexName: 'docs-helix',
+
+      // 可选：见下文
+      contextualSearch: true,
+    },
   } satisfies Preset.ThemeConfig,
 };
 
