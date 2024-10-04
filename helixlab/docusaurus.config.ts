@@ -214,12 +214,12 @@ const config: Config = {
 
     algolia: {
       // Algolia 提供的应用 ID
-      appId: 'OBXNFOHOLN',
+      appId: 'MVJL0VX104',
 
       //  公开 API 密钥：提交它没有危险
-      apiKey: '449a7495e03a467f9fc3887a17d68e7e',
+      apiKey: '25780f962fa1cddb31075cb80797aebb',
 
-      indexName: 'docs-helix',
+      indexName: 'helix',
 
       // 可选：见下文
       contextualSearch: true,
