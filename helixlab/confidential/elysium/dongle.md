@@ -17,11 +17,11 @@ tags: [elysium]
 
 以下为 Elysium 2.4G 接收器的无线模块固件，下载后存放在本地。烧录前请仔细核对文件名，不要烧错。
 
-| <Icon icon="fa-brands fa-bootstrap" /> 主控-ST STM32L433 Bootloader | 备注 |
+| <Icon icon="fa-brands fa-bluetooth" /> 无线模块-Nordic nRF52840 无线收发程序 | 备注 |
 |---|---|
 | <Icon icon="fa-solid fa-circle-down" /> [`1.0.0`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helix_nrf52840_ankh_1.0.0.hex?v=1727790535) | <Icon icon="fa-solid fa-minus" /> |
 
-## 烧录 bootloader {#flash-bootloader}
+## 烧录 Bootloader {#flash-bootloader}
 
 :::warning
 
