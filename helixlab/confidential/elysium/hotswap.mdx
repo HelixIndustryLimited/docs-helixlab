@@ -19,13 +19,15 @@ tags: [elysium]
 
 ## 固件下载 {#download-firmware}
 
-以下为 Elysium 热插拔的无线模块固件和主控固件，下载后存放在本地。烧录前请仔细核对文件名，不要烧错。
+以下为 Elysium 热插拔的无线模块固件和主控固件，下载后存放在本地。
 
-| <Icon icon="fa-brands fa-bluetooth" /> 无线模块-Nordic nRF52840 | <Icon icon="fa-solid fa-microchip" /> 主控-ST STM32L433 | 备注 |
+需要先为 nRF 无线模块烧录无线收发程序，再为 STM32 烧录键盘程序。烧录前请仔细核对文件名，不要烧错。
+
+| <Icon icon="fa-brands fa-bluetooth" /> 无线模块-Nordic nRF52840 无线收发程序 | <Icon icon="fa-solid fa-microchip" /> 主控-ST STM32L433 键盘程序 | 备注 |
 |---|---| --- |
 | <Icon icon="fa-solid fa-circle-down" /> [`1.0.0`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helix_nrf52840_elysium_1.0.0.hex?v=1727787348) | <Icon icon="fa-solid fa-circle-down" /> [`1.0.2`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helix_elysium_hotswap_1.0.2.bin?v=1727775881) | <Icon icon="fa-solid fa-minus" /> |
 
-## 烧录 nRF 无线模块固件 {#flash-wireless-module-firmware}
+## 烧录 nRF 无线模块 {#flash-wireless-module-firmware}
 
 :::warning
 
@@ -74,7 +76,7 @@ tags: [elysium]
 
 </details>
 
-## 烧录 STM32 主控固件 {#flash-mcu-firmware}
+## 烧录键盘程序 {#flash-mcu-firmware}
 
 * 按住 PCB 背面的 BOOT 按钮的同时插入 USB 数据线。BOOT 按钮位于标记为 <Icon icon="fa-solid fa-registered" /> 的按钮的上方。
 

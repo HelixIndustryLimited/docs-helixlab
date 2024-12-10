@@ -19,13 +19,15 @@ tags: [elysium]
 
 ## 固件下载 {#download-firmware}
 
-以下为 Elysium 焊接板的 bootloader 固件和主控固件，下载后存放在本地。烧录前请仔细核对文件名，不要烧错。
+以下为 Elysium 焊接板的 bootloader 固件和主控固件，下载后存放在本地。
 
-| <Icon icon="fa-brands fa-bootstrap" /> 主控-ST STM32L433 Bootloader | <Icon icon="fa-solid fa-microchip" /> 主控-ST STM32L433 | 备注 |
+需要先烧录 Bootloader，再烧录键盘程序。烧录前请仔细核对文件名，不要烧错。
+
+| <Icon icon="fa-brands fa-bootstrap" /> 主控-ST STM32F405RG Bootloader | <Icon icon="fa-solid fa-microchip" /> 主控-ST STM32F405RG 键盘程序 | 备注 |
 |---|---| --- |
 | <Icon icon="fa-solid fa-circle-down" /> [`bootloader`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/tinyuf2-elysium.hex?v=1727789734) | <Icon icon="fa-solid fa-circle-down" /> [`1.0.0`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helix_elysium_soldered_1.0.0.uf2?v=1727777029) | <Icon icon="fa-solid fa-minus" /> |
 
-## 烧录 bootloader {#flash-bootloader}
+## 烧录 Bootloader {#flash-bootloader}
 
 :::warning
 
@@ -47,6 +49,6 @@ tags: [elysium]
 
 * 在“Data File (bin /hex /mot/ srec/ ...)”一栏中选择 bootloader 文件所在的路径，然后点击“Program Device”。
 
-## 烧录 STM32 主控固件 {#flash-mcu-firmware}
+## 烧录键盘程序 {#flash-mcu-firmware}
 
 * 插入 USB 数据线连接到电脑，电脑上应弹出一个名为 `BOOT` 的设备，将主控固件拖入此设备中，完成后该设备会自动弹出。
