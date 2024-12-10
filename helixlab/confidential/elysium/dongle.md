@@ -19,7 +19,7 @@ tags: [elysium]
 
 | <Icon icon="fa-brands fa-bluetooth" /> 无线模块-Nordic nRF52840 无线收发程序 | 备注 |
 |---|---|
-| <Icon icon="fa-solid fa-circle-down" /> [`1.0.0`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helix_nrf52840_ankh_1.0.0.hex?v=1727790535) | <Icon icon="fa-solid fa-minus" /> |
+| <Icon icon="fa-solid fa-circle-down" /> [`1.0.0`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helix_dongle_elysium_1.0.0.hex?v=1733807804) | <Icon icon="fa-solid fa-minus" /> |
 
 ## 烧录 Bootloader {#flash-bootloader}
 
