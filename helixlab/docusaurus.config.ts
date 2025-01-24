@@ -138,6 +138,7 @@ const config: Config = {
         disableInDev: true,
       } satisfies IdealImageOptions,
     ],
+    'docusaurus-plugin-image-zoom',
   ],
 
   themeConfig: {
@@ -223,6 +224,17 @@ const config: Config = {
 
       // 可选：见下文
       contextualSearch: true,
+    },
+
+    zoom: {
+      selector: '.markdown > img',
+      background: {
+        light: 'rgb(255, 255, 255)',
+        dark: 'rgb(50, 50, 50)'
+      },
+      config: {
+        // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+      }
     },
   } satisfies Preset.ThemeConfig,
 };
