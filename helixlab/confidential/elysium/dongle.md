@@ -23,7 +23,7 @@ tags: [elysium]
 
 ## 烧录 Bootloader {#flash-bootloader}
 
-:::warning
+:::caution
 
 * J-Link 连接到接收器时，接收器须插入 USB 口，否则将无法识别到主控。
 

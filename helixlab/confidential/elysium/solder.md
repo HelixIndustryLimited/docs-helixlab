@@ -29,7 +29,7 @@ tags: [elysium]
 
 ## 烧录 Bootloader {#flash-bootloader}
 
-:::warning
+:::caution
 
 * J-Link 连接到 Elysium 时， Elysium 须处于通电状态（有 3.3V），否则将无法识别到主控，因此请连接 USB 小板，然后通过USB 为 Elysium 主板供电。
 

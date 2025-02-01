@@ -55,7 +55,7 @@ function PlaygroundCard({name, image, url, urlTS, description}: Props) {
             </b>
           </div>
           <div className="button-group button-group--block">
-            <Link className="button button--secondary" to={url}>
+            <Link className="button button--secondary button-gradient" to={url}>
               Helix Version
             </Link>
             <Link className="button button--secondary" to={urlTS}>

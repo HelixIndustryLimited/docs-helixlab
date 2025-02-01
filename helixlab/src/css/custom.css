@@ -55,12 +55,159 @@
   );
 }
 
+details{
+  font-size: small;
+}
+
+.theme-admonition-tip {
+  font-size: smaller;
+  color:#fff;
+  --ifm-alert-foreground-color: #fff;
+  background-color: #39c172; /* 背景颜色 */
+  border: none; /* 移除默认边框 */
+  border-left: 5px solid #155239;
+  border-radius: 0px; /* 圆角 */
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+[data-theme='dark'] .theme-admonition-tip {
+  background-color: #155239; 
+  border-left: 5px solid #0a3624;
+}
+
+.theme-admonition-caution{
+  font-size: smaller;
+  color:#fff;
+  --ifm-alert-foreground-color: #fff;
+  background-color: #d8b253; /* 背景颜色 */
+  border: none; /* 移除默认边框 */
+  border-left: 5px solid #856413;
+  border-radius: 0px; /* 圆角 */
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+[data-theme='dark'] .theme-admonition-caution {
+  background-color: #80641e; 
+  border-left: 5px solid #4f3e0e;
+}
+
+.theme-admonition-note {
+  font-size: smaller;
+  color:#404040;
+  --ifm-alert-foreground-color: #fff;
+  background-color: #f3f3f3; /* 背景颜色 */
+  border: none; /* 移除默认边框 */
+  border-left: 5px solid #808080;
+  border-radius: 0px; /* 圆角 */
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+[data-theme='dark'] .theme-admonition-note {
+  background-color: #b8b8b8; 
+  border-left: 5px solid #606060;
+}
+
+.theme-admonition-info {
+  font-size: smaller;
+  color:#fff;
+  --ifm-alert-foreground-color: #fff;
+  background-color: #3084c8; /* 背景颜色 */
+  border: none; /* 移除默认边框 */
+  border-left: 5px solid #0e3d64;
+  border-radius: 0px; /* 圆角 */
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+[data-theme='dark'] .theme-admonition-info {
+  background-color: #1a456b; 
+  border-left: 5px solid #0d2f4a;
+}
+
+.theme-admonition-danger {
+  font-size: smaller;
+  color:#fff;
+  --ifm-alert-foreground-color: #fff;
+  background-color: #dd3030; /* 背景颜色 */
+  border: none; /* 移除默认边框 */
+  border-left: 5px solid #771717;
+  border-radius: 0px; /* 圆角 */
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+[data-theme='dark'] .theme-admonition-danger {
+  background-color: #681d20; 
+  border-left: 5px solid #481213;
+}
+
+.alert--info{
+  --ifm-alert-background-color: #ffffff;
+  --ifm-alert-background-color-highlight: rgb(246, 246, 246);
+  --ifm-alert-foreground-color: #303030;
+  --ifm-alert-border-color: #303030;
+}
+
+[data-theme='dark'] .alert--info{
+  --ifm-alert-background-color: #1a1a1a;
+  --ifm-alert-background-color-highlight: rgb(43, 43, 43);
+  --ifm-alert-foreground-color: #d3d3d3;
+  --ifm-alert-border-color: #d3d3d3;
+}
+
 img[alt=mode-switch_drawing] { width: 200px; }
 img[alt=ankh_pcb_drawing] { width: 350px; }
 img[alt=gelix_drawing] { width: 500px; }
 
+[data-theme="dark"] kbd:hover {
+  box-shadow: none; /* 移除阴影 */
+  transform: translateY(1px); /* 向下移动 1px */
+}
+
+kbd:hover {
+  box-shadow: none; /* 移除阴影 */
+  transform: translateY(1px); /* 向下移动 1px */
+}
+
+kbd {
+  display: inline-block; /* 确保 transform 生效 */
+}
+
+[data-theme="dark"] kbd {
+  color:#d8d8d8;
+  background-color: #1c1c1c; /* 背景颜色 */
+  border: 1px solid #767676; /* 虚线边框 */
+  box-shadow: 
+  0 1px 0 #767676; /* 更厚的下边缘阴影 */
+  display: inline-block; /* 确保 transform 生效 */
+}
+
 .quote-text {
-  color: rgb(137, 137, 137);
+  color: #a9a9a9;
+  line-height: 2; /* 推荐使用无单位值，相对于当前字体大小 */
+  text-align: center; /* 文字水平居中 */
+  font-size: small;
+  margin: 0 auto 15px; /* 水平居中 */
+  padding: 10px; /* 内边距 */
+  border-left: none;
+  max-width: 100%; /* 控制宽度 */
+}
+
+[data-theme="dark"] .quote-text {
+  color: #7e7e7e;
 }
 
 .special-text {
@@ -75,6 +222,76 @@ img[alt=gelix_drawing] { width: 500px; }
   padding-top: 5px;
 }
 
+.button-gradient {
+  background-image: linear-gradient(to right, #f8edde 0%, #f7d6a0  51%, #f8edde  100%);
+  border-color: transparent;
+  background-size: 200% auto; /* 设置渐变宽度为按钮宽度的两倍 */
+  transition: background-position 0.5s ease; /* 添加过渡效果，使变化更平滑 */
+}
+
+.button-gradient:hover {
+   background-position: right center; /* change the direction of the change here */
+   text-decoration: none;
+}
+
+.solid-line {
+  height: 2px; /* 分割线的高度 */
+  background-color: #cc9e75; /* 单一颜色 */
+  mask: linear-gradient(
+    90deg,
+    transparent 0%,
+    #000 5%, /* 左端 5% 透明到不透明 */
+    #000 95%, /* 右端 95% 不透明到透明 */
+    transparent 100%
+  );
+  margin-top: 10px; /* 增加下方的间距 */
+  margin-bottom: 30px; /* 增加下方的间距 */
+}
+
+.player-wrapper {
+  position: relative;
+  width: 75%; /* 控制容器宽度为80% */
+  margin: 35px auto 20px; /* 增加下边距留出空间 */
+  aspect-ratio: 16/9; /* 维持16:9比例 */
+}
+
+.player-wrapper-alt1 {
+  position: relative;
+  width: 75%; /* 控制容器宽度为80% */
+  margin: 35px auto 20px; /* 增加下边距留出空间 */
+  aspect-ratio: 458/415; /* 维持16:9比例 */
+}
+
+.player-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 10px 50px #606060; /* 适当减小阴影 */
+}
+
+[data-theme="dark"] .player-container {
+  box-shadow: 0px 10px 50px #0a0a0a;
+}
+
+.player-wrapper .player-container .react-player__progress-bar {
+  background-color: rgba(218, 150, 150, 0.7) ;
+}
+
+@media (max-width: 768px) {
+  .player-wrapper {
+    width: 95%; /* 手机端稍微加宽 */
+    margin-bottom: 30px;
+  }
+  .quote-text {
+    margin-top: 20px; /* 手机端减少上边距 */
+    max-width: 90%; /* 文字更宽一些 */
+  }
+}
+
 @font-face {
   font-family: "DejavuSansMono";
   src: url('/static/DejaVuSansMono.woff') format('woff');
@@ -84,3 +301,4 @@ img[alt=gelix_drawing] { width: 500px; }
   font-family: "RubikMonoOne-Regular";
   src: url('/static/RubikMonoOne-Regular.woff') format('woff');
 }
+
