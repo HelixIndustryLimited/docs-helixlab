@@ -183,7 +183,11 @@ kbd:hover {
 }
 
 kbd {
+  font-family: "Varela Round", serif;
+  font-size: 12px;
+  letter-spacing: 1px;
   display: inline-block; /* 确保 transform 生效 */
+  padding-right: 4px; /* 根据需要调整值 */
 }
 
 [data-theme="dark"] kbd {
@@ -302,3 +306,4 @@ kbd {
   src: url('/static/RubikMonoOne-Regular.woff') format('woff');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
