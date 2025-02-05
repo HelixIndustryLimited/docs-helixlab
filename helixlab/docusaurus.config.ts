@@ -150,7 +150,7 @@ const config: Config = {
       },
     },
     navbar: {
-      title: 'Helix Lab',
+      // title: 'Docs',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo-helixlab.svg',
@@ -164,28 +164,30 @@ const config: Config = {
         //   label: '文档',
         // },
         {
-          label: '产品',
+          label: '全部',
           to: 'docs-products/aaru-65',
           position: 'left',
           docsPluginId: 'docs-products',
           activeBasePath: 'docs-products',
         },
+        { href: 'https://via.helix.site', label: 'VIA', position: 'left'},
         {
-          label: 'Ankh™ R2',
+          label: 'Ankh R2',
           to: 'docs-ankh-r2/intro',
           position: 'left',
           docsPluginId: 'docs-ankh-r2',
           activeBasePath: 'docs-ankh-r2',
+          className: 'ankh-with-badge',
         },
         {
-          label: 'Elysium™',
+          label: 'Elysium',
           to: 'docs-elysium/intro',
           position: 'left',
           docsPluginId: 'docs-elysium',
           activeBasePath: 'docs-elysium',
+          className: 'elysium-with-badge',
         },
         // { to: 'https://www.helix.site/blogs/resources', label: '下载', position: 'left' },
-        { href: 'https://helix.site', label: '商店', position: 'left' },
         {
           type: "localeDropdown",
           position: "right",

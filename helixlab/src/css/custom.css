@@ -55,6 +55,27 @@
   );
 }
 
+.navbar__brand::after {
+  content: '';
+  display: inline-block;
+  width: 1px; /* 竖线宽度 */
+  height: 24px; /* 竖线高度 */
+  background-color: #d9d9d9; /* 竖线颜色 */
+  margin-left: 9px;
+  margin-right: -13px;
+  vertical-align: middle; /* 垂直居中 */
+}
+
+[data-theme='dark'] .navbar__brand::after {
+  background-color: #474747; /* 竖线颜色 */
+}
+
+@media (max-width: 768px) {
+  .navbar__brand::after{
+    display: none;
+  }
+}
+
 details{
   font-size: small;
 }
@@ -307,3 +328,5 @@ kbd {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Padyakke+Expanded+One&display=swap');
