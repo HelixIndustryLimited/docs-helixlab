@@ -55,6 +55,14 @@
   );
 }
 
+a {
+  margin: 0 0.2em;
+}
+
+.navbar__title {
+  display: none !important;
+}
+
 .navbar__brand::after {
   content: '';
   display: inline-block;
@@ -195,12 +203,11 @@ img[alt=gelix_drawing] { width: 500px; }
 
 [data-theme="dark"] kbd:hover {
   box-shadow: none; /* 移除阴影 */
-  transform: translateY(1px); /* 向下移动 1px */
 }
 
 kbd:hover {
   box-shadow: none; /* 移除阴影 */
-  transform: translateY(1px); /* 向下移动 1px */
+  transform: translateY(-0.5px); /* 向下移动 1px */
 }
 
 kbd {
@@ -209,6 +216,7 @@ kbd {
   letter-spacing: 1px;
   display: inline-block; /* 确保 transform 生效 */
   padding-right: 4px; /* 根据需要调整值 */
+  transform: translateY(-1.5px); 
 }
 
 [data-theme="dark"] kbd {

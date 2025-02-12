@@ -3,6 +3,8 @@ sidebar_position: 3
 description: 充电
 ---
 
+import HoverLink from '@site/src/components/HoverLink/HoverLink';
+
 # 充电 {#battery-charging}
 
 :::note
@@ -13,7 +15,14 @@ description: 充电
 
 ---
 
-当电池开关推至 **ON** <sup>[<Icon icon="fa-solid fa-compass" /> 怎么做？](/docs-elysium/battery/battery-switch)</sup>，并且 USB 数据线**已连接**时，Elysium 会为电池充电。
+{
+<HoverLink
+  href="/docs-elysium/battery/battery-switch"
+  svgPath={require('!!url-loader!./img/switch_dir.svg').default}
+  offsetX={15}
+  offsetY={240}
+>打开电池开关</HoverLink>
+}，并且 USB 数据线**已连接**时，Elysium 会为电池充电。
 
 电池从完全亏电到充满电大约需要 7.5 小时。
 

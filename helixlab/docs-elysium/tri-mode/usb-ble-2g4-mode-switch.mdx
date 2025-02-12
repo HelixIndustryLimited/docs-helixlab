@@ -3,6 +3,8 @@ sidebar_position: 1
 description: 切换 USB/BLE/2G4 模式
 ---
 
+import HoverLink from '@site/src/components/HoverLink/HoverLink';
+
 # 切换 USB/BLE/2G4 模式 {#usb-ble-2g4-mode-switch}
 
 :::note
@@ -21,11 +23,21 @@ Elysium 支持三种连接模式：
 
 ## 切换到 USB 有线模式 {#switch-to-usb-mode}
 
-在任何情况下，只需用 USB 数据线把 Elysium 连接至电脑，即可切换到有线模式。
+在任何时候，用 USB 数据线把 Elysium 连接至电脑，即可切换到有线模式。
 
 ## 切换到无线模式 {#switch-to-wireless-mode}
 
-当 USB 数据线**未连接**时，Elysium 会自动切换到无线模式。在无线模式下，键盘通过内置电池供电，因此需要把电池开关推至 **ON** <sup>[<Icon icon="fa-solid fa-compass" /> 怎么做？](/docs-elysium/battery/battery-switch)</sup>。
+当 USB 数据线**未连接**时，Elysium 会自动切换到无线模式。
+
+在无线模式下，键盘通过内置电池供电，因此需要{
+<HoverLink
+  href="/docs-elysium/battery/battery-switch"
+  svgPath={require('!!url-loader!./img/switch_dir.svg').default}
+  offsetX={15}
+  offsetY={240}
+>打开电池开关</HoverLink>
+}
+。
 
 下图所示的青绿色按键为无线模式选择键，请按下对应的键来切换 BLE 或 2G4 模式：
 

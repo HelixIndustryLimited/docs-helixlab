@@ -22,7 +22,7 @@ import TabItem from '@theme/TabItem';
 <details>
   <summary> <Icon icon="fa-solid fa-file-circle-question" /> 固件后缀名的含义</summary>
 
-`_ll`: **Low Latency**，用更短的消抖时间和更激进的消抖算法换取低延迟，低端或老化的轴体可能会出现双击现象。详见 [延迟](/docs-elysium/miscellaneous/latency) 章节。
+`_ll`: **Low Latency**，用更短的消抖时间和更激进的消抖算法换取低延迟，低端或老化的轴体可能会出现双击现象。详见[延迟](/docs-elysium/miscellaneous/latency)章节。
 
 `_u8`: **USB 8kHz**，启用 USB 8kHz 轮询率，可能有助于降低 USB 链路延迟，也可能导致电脑 CPU 占用率升高。
 
@@ -32,28 +32,28 @@ import TabItem from '@theme/TabItem';
 
 :::caution
 
-使用 [VIA](/docs-elysium/via/conect-via) 时，你的固件版本与 VIA json 版本必须对应，否则 VIA 不能识别你的键盘。我们建议访问 [via.helix.site](https://via.helix.site)，因为该网站无需上传 json（仅限 Helix Lab 的新产品）。
+使用[VIA](/docs-elysium/via/conect-via) 时，你的固件版本与 VIA json 版本必须对应，否则 VIA 不能识别你的键盘。我们建议访问[via.helix.site](https://via.helix.site)，因为该网站无需上传 json（仅限 Helix Lab 的新产品）。
 
 :::
 
-固件的使用方法，详见 [主控固件更新](/docs-elysium/firmware-update/mcu-firmware-update) 章节。
+固件的使用方法，详见[主控固件更新](/docs-elysium/firmware-update/mcu-firmware-update)章节。
 
-VIA json 的使用方法，详见 [连接 VIA](/docs-elysium/via/conect-via) 章节。
+VIA json 的使用方法，详见[连接 VIA](/docs-elysium/via/conect-via)章节。
 
 <Tabs queryString="pcb-variant">
   <TabItem value="hotswap" label="热插拔" default>
 
     | 固件版本 | VIA json | 备注 | 代号 |
     |---|---| --- | --- |
-    | <Icon icon="fa-solid fa-circle-down" /> [`1.0.2`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helix_elysium_hotswap_1.0.2.bin?v=1727775881) | <Icon icon="fa-solid fa-circle-down" /> [`1.0.0`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helixlab_elysium_hotswap_1.0.0.json.zip?v=1727776425) | <Icon icon="fa-solid fa-minus" /> | 1 |
-    | <Icon icon="fa-solid fa-circle-down" /> [`1.0.2_ll`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helix_elysium_hotswap_1.0.2_ll.bin?v=1727776302) | <Icon icon="fa-solid fa-circle-down" /> [`1.0.0`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helixlab_elysium_hotswap_1.0.0.json.zip?v=1727776425) | <Icon icon="fa-solid fa-minus" /> | 1 |
+    | <Icon icon="fa-solid fa-circle-down" />[`1.0.2`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helix_elysium_hotswap_1.0.2.bin?v=1727775881) | <Icon icon="fa-solid fa-circle-down" />[`1.0.0`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helixlab_elysium_hotswap_1.0.0.json.zip?v=1727776425) | <Icon icon="fa-solid fa-minus" /> | 1 |
+    | <Icon icon="fa-solid fa-circle-down" />[`1.0.2_ll`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helix_elysium_hotswap_1.0.2_ll.bin?v=1727776302) | <Icon icon="fa-solid fa-circle-down" />[`1.0.0`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helixlab_elysium_hotswap_1.0.0.json.zip?v=1727776425) | <Icon icon="fa-solid fa-minus" /> | 1 |
 
   </TabItem>
   <TabItem value="soldered" label="焊接">
     
     | 固件版本 | VIA json | 备注 | 代号 |
     |---|---| --- | --- |
-    | <Icon icon="fa-solid fa-circle-down" /> [`1.0.0`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helix_elysium_soldered_1.0.0.uf2?v=1727777029) | <Icon icon="fa-solid fa-circle-down" /> [`1.0.0`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helixlab_elysium_solder_1.0.0.json.zip?v=1727776426) | <Icon icon="fa-solid fa-minus" /> | 0 |
+    | <Icon icon="fa-solid fa-circle-down" />[`1.0.0`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helix_elysium_soldered_1.0.0.uf2?v=1727777029) | <Icon icon="fa-solid fa-circle-down" />[`1.0.0`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helixlab_elysium_solder_1.0.0.json.zip?v=1727776426) | <Icon icon="fa-solid fa-minus" /> | 0 |
 
   </TabItem>
 </Tabs>
