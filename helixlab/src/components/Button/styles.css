@@ -1,0 +1,7 @@
+:root {
+    --btn-bg: #000;
+}
+
+[data-theme='dark'] {
+    --btn-bg: #2f3235;
+}

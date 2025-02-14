@@ -36,22 +36,85 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
   }}
 />
 
-<img src={'/img/numbers/n_6.svg'} style={{ verticalAlign: '-0.16em', width: '18px' }} /> &nbsp; 用软排线连接左右两片 PCB：拉开 4 个连接座的黑色卡扣，塞入软排线并确保推至最深处，然后推回黑色卡扣。
+<img src={'/img/numbers/n_6.svg'} style={{ verticalAlign: '-0.16em', width: '18px' }} /> &nbsp; 用软排线连接左右两片 PCB：拉开 4 个连接座的黑色卡扣，塞入软排线并确保推至最深处，然后推回黑色卡扣。安装时请根据下方的警告确认软排线方向。
 
 <img src={'/img/numbers/n_7.svg'} style={{ verticalAlign: '-0.16em', width: '18px' }} /> &nbsp; 将子母板连接线的一端连接至主板。
 
-**请阅读下面的注意事项：**
-
 :::caution
 
-在连接排线时，务必留意方向。
+在连接软排线时，务必留意方向。
 
-步骤 <img src={'/img/numbers/n_6.svg'} style={{ verticalAlign: '-0.2em', width: '18px' }} /> 中的软排线，一面是金手指，另一面是凸起的薄片，在安装软排线时，**确保金手指朝向 PCB，你能看见的是有薄片的那面。**
+{/* 外层容器 */}
+<div style={{ 
+  display: 'flex',
+  gap: '60px', // 图片间距
+  flexWrap: 'wrap', // 允许在小屏幕换行
+}}>
+  {/* 第一个图片组件 */}
+  <div style={{ 
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    width: 'fit-content' 
+  }}>
+    <img 
+      src={'/img/elysium/building-guide/fpc-1-top.svg'} 
+      style={{ width: '125px' }} 
+    />
+      <span style={{ 
+    textAlign: 'center', // 文字居中
+    width: '100%', // 继承图片宽度
+    marginTop: '8px', // 与图片间距
+    fontSize: '10px',
+    fontWeight: 'bold',
+    color:'#fff'
+  }}>
+      <Icon icon="fa-solid fa-caret-up" /> 金手指面
+    </span>
+  </div>
 
-此外，软排线无法承受重量，在拿起内胆时需要同时拿起两边。
+  {/* 第二个图片组件 */}
+  <div style={{ 
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    width: 'fit-content' 
+  }}>
+    <img 
+      src={'/img/elysium/building-guide/fpc-2-top.svg'} 
+      style={{ width: '100px', transform: 'translateY(67px)',}} 
+    />
+      <span style={{ 
+    textAlign: 'center', // 文字居中
+    width: '100%', // 继承图片宽度
+    marginTop: '8px', // 与图片间距
+    fontSize: '10px',
+    fontWeight: 'bold',
+    transform: 'translateY(67px)',
+    color:'#fff'
+  }}>
+      <Icon icon="fa-solid fa-caret-up" /> 金手指面
+    </span>
+  </div>
+</div>
+
+
+步骤 <img src={'/img/numbers/n_6.svg'} style={{ verticalAlign: '-0.2em', width: '18px' }} /> 中，软排线的一面是金手指，另一面是凸起的薄片，在安装软排线时，**确保金手指面对着 PCB，这样你能够看到的是有薄片的那面。**
+
+此外，软排线无法承受重量，因此在拿起内胆时，需要同时拿起左右两边，以避免对软排线造成拉扯或损坏。
 
 步骤 <img src={'/img/numbers/n_7.svg'} style={{ verticalAlign: '-0.2em', width: '18px' }} /> 中的连接线具有防呆功能，难以插反，勿使用蛮力。
 
+:::
 
+:::info
+
+如果键盘的右半部分的某一排按键或灯光失灵，而左半部分正常，则通常是由于软排线未安装到位或损坏导致的。
+
+其中，未安装到位的情况包括：
+
+* 正反面颠倒。
+
+* 金手指未能与连接器充分接触。
 
 :::

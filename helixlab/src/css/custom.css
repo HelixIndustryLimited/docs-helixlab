@@ -86,6 +86,16 @@ a {
 
 details{
   font-size: small;
+  color:#212121 !important;
+  background-color: #ffffff !important;
+  border-color: #444950 !important;
+  line-height: 2; /* 根据需要调整数值 */
+}
+
+[data-theme='dark'] details{
+  color:#ffffff !important;
+  background-color: #1b1b1d !important;
+  border-color: #444950 !important;
 }
 
 .theme-admonition-tip {
@@ -102,6 +112,10 @@ details{
   border-bottom-right-radius: 10px;
 }
 
+.theme-admonition-tip a {
+  font-weight: bold;
+}
+
 [data-theme='dark'] .theme-admonition-tip {
   background-color: #155239; 
   border-left: 5px solid #0a3624;
@@ -111,7 +125,7 @@ details{
   font-size: smaller;
   color:#fff;
   --ifm-alert-foreground-color: #fff;
-  background-color: #d8b253; /* 背景颜色 */
+  background-color: #da9e35; /* 背景颜色 */
   border: none; /* 移除默认边框 */
   border-left: 5px solid #856413;
   border-radius: 0px; /* 圆角 */
@@ -121,9 +135,13 @@ details{
   border-bottom-right-radius: 10px;
 }
 
+.theme-admonition-caution a {
+  font-weight: bold;
+}
+
 [data-theme='dark'] .theme-admonition-caution {
-  background-color: #80641e; 
-  border-left: 5px solid #4f3e0e;
+  background-color: #906d3b; 
+  border-left: 5px solid #5a402c;
 }
 
 .theme-admonition-note {
@@ -178,6 +196,10 @@ details{
   border-bottom-right-radius: 10px;
 }
 
+.theme-admonition-danger a {
+  font-weight: bold;
+}
+
 [data-theme='dark'] .theme-admonition-danger {
   background-color: #681d20; 
   border-left: 5px solid #481213;
@@ -186,8 +208,12 @@ details{
 .alert--info{
   --ifm-alert-background-color: #ffffff;
   --ifm-alert-background-color-highlight: rgb(246, 246, 246);
-  --ifm-alert-foreground-color: #303030;
-  --ifm-alert-border-color: #303030;
+  --ifm-alert-foreground-color: #f8f8f8;
+  --ifm-alert-border-color: #dedede;
+}
+
+.alert--info a {
+  font-weight: bold;
 }
 
 [data-theme='dark'] .alert--info{
@@ -200,6 +226,47 @@ details{
 img[alt=mode-switch_drawing] { width: 200px; }
 img[alt=ankh_pcb_drawing] { width: 350px; }
 img[alt=gelix_drawing] { width: 500px; }
+
+/* 调整表格整体字号 */
+
+/* 表头字号
+.rdt_TableCol {
+  font-size: 12px;
+  font-weight: bolder;
+  color: #272729;
+  background-color: #ffffff;
+}
+
+[data-theme='dark'] .rdt_TableCol {
+  color: #fff;
+  background-color: #1b1b1d;
+}
+
+.rdt_TableBody {
+  background-color: #1b1b1d;
+} */
+
+[data-theme='dark'] .rdt_TableFooter {
+  background-color: #1b1b1d !important;
+}
+
+[data-theme='dark'] .rdt_TableCell {
+  color:#fff;
+  background-color: #1b1b1d !important;
+}
+
+[data-theme='dark'] .rdt_TableHeadRow {
+  background-color: #444950 !important;
+}
+
+[data-theme='dark'] .rdt_TableCol {
+  color:#fff;
+  background-color: #1b1b1d !important;
+}
+
+[data-theme='dark'] .rdt_TableRow {
+  background-color: #444950 !important;
+}
 
 [data-theme="dark"] kbd:hover {
   box-shadow: none; /* 移除阴影 */

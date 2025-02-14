@@ -5,6 +5,8 @@ description: 固件
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import ElysiumFirmwareListHotswap from '@site/src/components/Table/elysium/FirmwareListHotswap';
+import ElysiumFirmwareListSolder from '@site/src/components/Table/elysium/FirmwareListSolder';
 
 # 固件 {#firmware}
 
@@ -36,24 +38,32 @@ import TabItem from '@theme/TabItem';
 
 :::
 
+:::info
+
 固件的使用方法，详见[主控固件更新](/docs-elysium/firmware-update/mcu-firmware-update)章节。
 
 VIA json 的使用方法，详见[连接 VIA](/docs-elysium/via/conect-via)章节。
 
+:::
+
 <Tabs queryString="pcb-variant">
   <TabItem value="hotswap" label="热插拔" default>
 
-    | 固件版本 | VIA json | 备注 | 代号 |
+    {/* | 固件版本 | VIA json | 备注 | 代号 |
     |---|---| --- | --- |
     | <Icon icon="fa-solid fa-circle-down" />[`1.0.2`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helix_elysium_hotswap_1.0.2.bin?v=1727775881) | <Icon icon="fa-solid fa-circle-down" />[`1.0.0`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helixlab_elysium_hotswap_1.0.0.json.zip?v=1727776425) | <Icon icon="fa-solid fa-minus" /> | 1 |
-    | <Icon icon="fa-solid fa-circle-down" />[`1.0.2_ll`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helix_elysium_hotswap_1.0.2_ll.bin?v=1727776302) | <Icon icon="fa-solid fa-circle-down" />[`1.0.0`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helixlab_elysium_hotswap_1.0.0.json.zip?v=1727776425) | <Icon icon="fa-solid fa-minus" /> | 1 |
+    | <Icon icon="fa-solid fa-circle-down" />[`1.0.2_ll`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helix_elysium_hotswap_1.0.2_ll.bin?v=1727776302) | <Icon icon="fa-solid fa-circle-down" />[`1.0.0`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helixlab_elysium_hotswap_1.0.0.json.zip?v=1727776425) | <Icon icon="fa-solid fa-minus" /> | 1 | */}
+
+    <ElysiumFirmwareListHotswap />
 
   </TabItem>
   <TabItem value="soldered" label="焊接">
     
-    | 固件版本 | VIA json | 备注 | 代号 |
+    {/* | 固件版本 | VIA json | 备注 | 代号 |
     |---|---| --- | --- |
-    | <Icon icon="fa-solid fa-circle-down" />[`1.0.0`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helix_elysium_soldered_1.0.0.uf2?v=1727777029) | <Icon icon="fa-solid fa-circle-down" />[`1.0.0`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helixlab_elysium_solder_1.0.0.json.zip?v=1727776426) | <Icon icon="fa-solid fa-minus" /> | 0 |
+    | <Icon icon="fa-solid fa-circle-down" />[`1.0.0`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helix_elysium_soldered_1.0.0.uf2?v=1727777029) | <Icon icon="fa-solid fa-circle-down" />[`1.0.0`](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helixlab_elysium_solder_1.0.0.json.zip?v=1727776426) | <Icon icon="fa-solid fa-minus" /> | 0 | */}
+
+    <ElysiumFirmwareListSolder />
 
   </TabItem>
 </Tabs>

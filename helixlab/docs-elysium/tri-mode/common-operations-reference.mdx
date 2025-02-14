@@ -1,11 +1,13 @@
 ---
-sidebar_position: 4
-description: 切换 USB/BLE/2G4 模式
+sidebar_position: 1
+description: 基本操作速查
 ---
 
 import HoverLink from '@site/src/components/HoverLink/HoverLink';
+import BrowserOnly from '@docusaurus/BrowserOnly'; // 客户端渲染组件
+import Flow from '@site/src/components/Flow/elysium/operations';
 
-# 常用操作速查 {#common-operations-reference}
+# 基本操作速查 {#common-operations-reference}
 
 :::note
 
@@ -14,6 +16,25 @@ import HoverLink from '@site/src/components/HoverLink/HoverLink';
 :::
 
 ---
+
+本页面仅简要记录了三模的常用指令，旨在帮助新用户快速了解基础操作。
+
+若需了解功能细节或更多其他操作，建议查阅本章节下的其他文章。
+
+### 工作流程 {#workflow}
+
+<BrowserOnly>
+  {() => (
+    <div style={{ 
+      height: '750px', // 必须明确高度
+      border: '0px',
+      borderRadius: '8px',
+      margin: '2rem 0'
+    }}>
+      <Flow />
+    </div>
+  )}
+</BrowserOnly>
 
 ### 切换到 USB 有线模式 {#switch-to-usb-mode}
 
@@ -49,6 +70,6 @@ import HoverLink from '@site/src/components/HoverLink/HoverLink';
 
 * 长按 <kbd>**fn**</kbd> + <kbd>**2**</kbd> 3 秒左右。
 
-### BLE 删除配对
+### BLE 删除配对 {#ble-unpairing}
 
 * 长按 <kbd>**fn**</kbd> + <kbd>**1**</kbd> 3 秒左右，以切换到 BLE 模式，然后短按 <kbd>**fn**</kbd> + <kbd>**X**</kbd> 删除配对。

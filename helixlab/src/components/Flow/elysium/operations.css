@@ -1,0 +1,128 @@
+.react-flow__node {
+  border-radius: 8px;
+  border-color: #d9d9d9;
+  font-size: 10px;
+}
+[data-theme='dark'] .react-flow__node {
+  background-color: #1a1a1a;
+}
+
+.react-flow__node.selectable:hover {
+  border-color: #b6b6b6;
+  box-shadow: none;
+}
+
+.react-flow__node.selectable:focus {
+  border-radius: 8px;
+  border-color: #d9d9d9;
+  box-shadow: none;
+}
+
+.react-flow__node.selectable:focus:active {
+  border-radius: 8px;
+  border-color: #d9d9d9;
+  box-shadow: none;
+}
+
+.react-flow__node.selectable:focus {
+  border-radius: 8px;
+  border-color: #cc9e75;
+  box-shadow: none;
+}
+
+.react-flow__node.selectable:focus:active {
+  border-radius: 8px;
+  border-color: #d9d9d9;
+  box-shadow: none;
+}
+
+.react-flow__node.selectable.selected {
+  border-radius: 8px;
+  border-color: #d9d9d9;
+  box-shadow: none;
+}
+
+/* .react-flow__edge .react-flow__edge-path{
+  stroke: #d9d9d9;
+}
+
+.react-flow__edge.selectable:hover .react-flow__edge-path,
+.react-flow__edge.selectable.selected .react-flow__edge-path {
+    stroke: #d9d9d9;
+} */
+
+.react-flow__edge-textbg {
+  fill: #fff;
+}
+
+[data-theme='dark'] .react-flow__edge-textbg {
+  fill: #1a1a1a;
+}
+
+[data-theme='dark'] .react-flow__edge-text {
+  fill: #e6e6e6;
+}
+
+.react-flow__handle {
+  background-color: #fff;
+  border-color: #b7b7b7;
+}
+
+[data-theme='dark'] .react-flow__handle {
+  background-color: #1c1c1c;
+}
+
+/* Annotation Node */
+ 
+.react-flow__node-annotation {
+  font-size: 9px;
+  width: 200px;
+  color: #3b9afa;
+  position: absolute;
+  box-shadow: none;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+}
+
+[data-theme='dark'] .react-flow__node-annotation {
+  background-color: transparent;
+}
+ 
+.react-flow__node-annotation .annotation-content {
+  padding: 10px;
+  display: flex;
+}
+ 
+.react-flow__node-annotation .annotation-level {
+  margin-right: 4px;
+}
+ 
+.react-flow__node-annotation .annotation-arrow {
+  position: absolute;
+  font-size: 24px;
+}
+
+/* Icon Node */
+
+.icon-container {
+  position: relative;
+  padding: 16px;
+}
+
+.icon-wrapper {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+
+/*右下角水印*/
+
+[data-theme="dark"] .react-flow__attribution {
+  background: rgba(40, 40, 40, 0.8);
+  border-radius: 4px;
+}
