@@ -1,13 +1,26 @@
 ---
 sidebar_position: 1
+pagination_next: null
 ---
+
+import SplashCursor from '@site/src/components/SplashCursor/SplashCursor'
+import BlurText from '@site/src/components/BlurText/BlurText';
+import "./elysium.css"
 
 # Elysium 帮助文档 {#elysium-manual}
 
+<SplashCursor />
 
-
-:::note
+{/* :::note
 
 本文档中所记载的内容始终以最新的固件为参照。在阅读时，请确保你已将 Elysium 的固件升级至最新版本。
 
-:::
+::: */}
+
+<BlurText
+  text="Hello from Elysium Doc."
+  delay={100}
+  animateBy="letters"
+  direction="top"
+  className="fancy-elysium"
+/>

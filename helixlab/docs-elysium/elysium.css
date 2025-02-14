@@ -1,0 +1,13 @@
+.fancy-elysium {
+    color: rgb(29, 29, 30);
+    margin-top: 130px;
+    text-align: center;
+    font-size: 33px;
+    font-family: "League Script", serif;
+}
+
+[data-theme='dark'] .fancy-elysium {
+    color: rgb(203, 203, 208);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=League+Script&display=swap');
