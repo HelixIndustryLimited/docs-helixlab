@@ -8,16 +8,25 @@
     --particle-color-primary-dark: #ffffff;
 } */
 
-.fancy-elysium {
-    color: rgb(50, 50, 50);
+.elysium-label {
+    color: rgb(121, 123, 128);
     margin-top: 130px;
     text-align: center;
-    font-size: 35px;
+    word-spacing: 0.5rem;
+    font-size: 30px;
     font-family: "Great Vibes", serif;
 }
 
-[data-theme='dark'] .fancy-elysium {
-    color: rgb(203, 203, 208);
+.elysium {
+    color: #c08f65;
+    text-align: center;
+    font-size: 88px;
+    letter-spacing: 1rem;
+    font-family: "MonktonIncisedSolid", serif;
+}
+
+[data-theme='dark'] .elysium-label {
+    color: rgb(185, 186, 195);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');

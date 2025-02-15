@@ -413,6 +413,11 @@ kbd {
   src: url('/static/RubikMonoOne-Regular.woff') format('woff');
 }
 
+@font-face {
+  font-family: "MonktonIncisedSolid";
+  src: url('/static/MonktonIncisedSolid.woff') format('woff');
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Padyakke+Expanded+One&display=swap');

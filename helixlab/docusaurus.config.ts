@@ -144,10 +144,16 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
+    
     docs: {
       sidebar: {
         hideable: true,
       },
+    },
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
     },
     navbar: {
       // title: 'Docs',
@@ -232,7 +238,7 @@ const config: Config = {
       selector: '.markdown > img',
       background: {
         light: 'rgb(255, 255, 255)',
-        dark: 'rgb(50, 50, 50)'
+        dark: '#1b1b1d'
       },
       config: {
         // options you can specify via https://github.com/francoischalifour/medium-zoom#usage

@@ -35,10 +35,10 @@ import "./elysium.css"
   }}>
     <Particles
       particleColors={['#5a56d1', '#49bbde']}
-      particleCount={200}
+      particleCount={300}
       particleSpread={10}
       speed={0.1}
-      particleBaseSize={100}
+      particleBaseSize={70}
       moveParticlesOnHover
       alphaParticles={false}
       disableRotation={false}
@@ -48,7 +48,23 @@ import "./elysium.css"
   {/* 文字层 */}
   <div style={{
     position: 'absolute',
-    top: '15%',         // 垂直居中起点
+    top: '20%',         // 垂直居中起点
+    left: '50%',        // 水平居中起点
+    transform: 'translate(-50%, -50%)', // 精确居中
+    zIndex: 2,          // 上层显示
+    pointerEvents: 'none' // 允许点击穿透到粒子层
+  }}>
+    <BlurText
+      text="ELYSIUM"
+      delay={200}
+      animateBy="letters"
+      direction="top"
+      className="elysium"
+    />
+  </div>
+  <div style={{
+    position: 'absolute',
+    top: '24%',         // 垂直居中起点
     left: '50%',        // 水平居中起点
     transform: 'translate(-50%, -50%)', // 精确居中
     zIndex: 2,          // 上层显示
@@ -58,8 +74,8 @@ import "./elysium.css"
       text="Type among Gods"
       delay={80}
       animateBy="letters"
-      direction="top"
-      className="fancy-elysium"
+      direction="bottom"
+      className="elysium-label"
     />
   </div>
 </div>
