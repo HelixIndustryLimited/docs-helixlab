@@ -1,13 +1,23 @@
+/* :root {
+    --particle-color-primary: #3a3a3a;
+    --particle-color-primary-dark: rgb(74, 74, 74);
+}
+
+[data-theme='dark'] {
+    --particle-color-primary: #ffffff;
+    --particle-color-primary-dark: #ffffff;
+} */
+
 .fancy-elysium {
-    color: rgb(29, 29, 30);
+    color: rgb(50, 50, 50);
     margin-top: 130px;
     text-align: center;
-    font-size: 33px;
-    font-family: "League Script", serif;
+    font-size: 35px;
+    font-family: "Great Vibes", serif;
 }
 
 [data-theme='dark'] .fancy-elysium {
     color: rgb(203, 203, 208);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=League+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');

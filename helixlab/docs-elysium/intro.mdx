@@ -1,10 +1,12 @@
 ---
 sidebar_position: 1
 pagination_next: null
+hide_table_of_contents: true
 ---
 
 import SplashCursor from '@site/src/components/SplashCursor/SplashCursor'
 import BlurText from '@site/src/components/BlurText/BlurText';
+import Particles from '@site/src/components//Particles/Particles';
 import "./elysium.css"
 
 # Elysium 帮助文档 {#elysium-manual}
@@ -17,10 +19,47 @@ import "./elysium.css"
 
 ::: */}
 
-<BlurText
-  text="Hello from Elysium Doc."
-  delay={100}
-  animateBy="letters"
-  direction="top"
-  className="fancy-elysium"
-/>
+<div style={{ 
+  width: '100%', 
+  height: '100vh',
+  position: 'relative',
+}}>
+  {/* 粒子层 */}
+  <div style={{
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    zIndex: 1 // 设置为底层
+  }}>
+    <Particles
+      particleColors={['#5a56d1', '#49bbde']}
+      particleCount={200}
+      particleSpread={10}
+      speed={0.1}
+      particleBaseSize={100}
+      moveParticlesOnHover
+      alphaParticles={false}
+      disableRotation={false}
+    />
+  </div>
+
+  {/* 文字层 */}
+  <div style={{
+    position: 'absolute',
+    top: '15%',         // 垂直居中起点
+    left: '50%',        // 水平居中起点
+    transform: 'translate(-50%, -50%)', // 精确居中
+    zIndex: 2,          // 上层显示
+    pointerEvents: 'none' // 允许点击穿透到粒子层
+  }}>
+    <BlurText
+      text="Type among Gods"
+      delay={80}
+      animateBy="letters"
+      direction="top"
+      className="fancy-elysium"
+    />
+  </div>
+</div>

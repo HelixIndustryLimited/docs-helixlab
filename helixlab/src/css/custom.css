@@ -18,7 +18,10 @@
   --ifm-navbar-background-color: #ffffff;
   --ifm-footer-background-color: #eaeaea;
 }
-
+[data-theme] {
+  transition: --particle-color-primary 0.3s ease, 
+             --particle-color-primary-dark 0.3s ease;
+}
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #cc9e75;
@@ -88,14 +91,22 @@ details{
   font-size: small;
   color:#212121 !important;
   background-color: #ffffff !important;
-  border-color: #444950 !important;
+  border-color: #dadada !important;
   line-height: 2; /* 根据需要调整数值 */
+}
+
+details a{
+  color:#212121 !important;
 }
 
 [data-theme='dark'] details{
   color:#ffffff !important;
   background-color: #1b1b1d !important;
   border-color: #444950 !important;
+}
+
+[data-theme='dark'] details a{
+  color:#ffffff !important;
 }
 
 .theme-admonition-tip {
@@ -209,7 +220,7 @@ details{
   --ifm-alert-background-color: #ffffff;
   --ifm-alert-background-color-highlight: rgb(246, 246, 246);
   --ifm-alert-foreground-color: #f8f8f8;
-  --ifm-alert-border-color: #dedede;
+  --ifm-alert-border-color: #cfcece;
 }
 
 .alert--info a {

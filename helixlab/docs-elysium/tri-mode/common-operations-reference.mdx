@@ -6,6 +6,7 @@ description: 基本操作速查
 import HoverLink from '@site/src/components/HoverLink/HoverLink';
 import BrowserOnly from '@docusaurus/BrowserOnly'; // 客户端渲染组件
 import Flow from '@site/src/components/Flow/elysium/operations';
+import Stepper, { Step } from '@site/src/components/Stepper/Stepper';
 
 # 基本操作速查 {#common-operations-reference}
 
@@ -36,13 +37,24 @@ import Flow from '@site/src/components/Flow/elysium/operations';
   )}
 </BrowserOnly>
 
-### 切换到 USB 有线模式 {#switch-to-usb-mode}
+### USB 有线模式 {#usb-mode}
 
 在任何时候，用 USB 数据线把 Elysium 连接至电脑，即可切换到有线模式。
 
-### 切换到 BLE 无线模式 {#switch-to-ble-mode}
+### BLE 无线模式 {#ble-mode}
 
-* <HoverLink
+<Stepper
+  initialStep={1}
+  backButtonText="Previous"
+  nextButtonText="Next"
+>
+  <Step>
+    <h2>BLE 操作步骤</h2>
+    <p>请点击 “Next”。</p>
+  </Step>
+  <Step>
+    <h2>电池</h2>
+    <HoverLink
     href="/docs-elysium/battery/battery-switch"
     svgPath={require('!!url-loader!./img/switch_dir.svg').default}
     offsetX={15}
@@ -50,14 +62,35 @@ import Flow from '@site/src/components/Flow/elysium/operations';
   >
     打开电池开关
   </HoverLink>
+  </Step>
+  <Step>
+    <h2>切换到 BLE 模式</h2>
+    <p>长按 <kbd>**fn**</kbd> + <kbd>**1**</kbd> 3 秒左右。</p>
+  </Step>
+  <Step>
+    <h2>配对</h2>
+    <p>如未完成主机配对，请参阅[BLE 配对](docs-elysium/tri-mode/ble/ble-pairing.mdx)章节进行操作。否则，Elysium 将自动尝试连接已配对的主机。</p>
+  </Step>
+    <Step>
+    <h2>完成</h2>
+    <p>拔出 USB 数据线以防止自动切换为有线模式。</p>
+  </Step>
+</Stepper>
 
-* 长按 <kbd>**fn**</kbd> + <kbd>**1**</kbd> 3 秒左右。
+### 2G4 无线模式 {#2g4-mode}
 
-* 如未完成主机配对，请参阅[BLE 配对](docs-elysium/tri-mode/ble/ble-pairing.mdx)章节进行操作。否则，Elysium 将自动尝试连接已配对的主机。
-
-### 切换到 2G4 无线模式 {#switch-to-2g4-mode}
-
-* <HoverLink
+<Stepper
+  initialStep={1}
+  backButtonText="Previous"
+  nextButtonText="Next"
+>
+  <Step>
+    <h2>2G4 操作步骤</h2>
+    <p>请点击 “Next”。</p>
+  </Step>
+  <Step>
+    <h2>电池</h2>
+    <HoverLink
     href="/docs-elysium/battery/battery-switch"
     svgPath={require('!!url-loader!./img/switch_dir.svg').default}
     offsetX={15}
@@ -65,11 +98,28 @@ import Flow from '@site/src/components/Flow/elysium/operations';
   >
     打开电池开关
   </HoverLink>
-
-* 把 2G4 接收器插入主机的 USB 端口。
-
-* 长按 <kbd>**fn**</kbd> + <kbd>**2**</kbd> 3 秒左右。
+  </Step>
+  <Step>
+    <h2>插入接收器</h2>
+    把 2G4 接收器插入主机的 USB 端口。
+  </Step>
+  <Step>
+    <h2>切换到 2G4 模式</h2>
+    <p>长按 <kbd>**fn**</kbd> + <kbd>**1**</kbd> 3 秒左右。</p>
+  </Step>
+    <Step>
+    <h2>完成</h2>
+    <p>拔出 USB 数据线以防止自动切换为有线模式。</p>
+  </Step>
+</Stepper>
 
 ### BLE 删除配对 {#ble-unpairing}
 
 * 长按 <kbd>**fn**</kbd> + <kbd>**1**</kbd> 3 秒左右，以切换到 BLE 模式，然后短按 <kbd>**fn**</kbd> + <kbd>**X**</kbd> 删除配对。
+
+<details>
+  <summary> <Icon icon="fa-solid fa-file-circle-question" /> 删除配对时，如果已经处于 BLE 模式，还需要长按 <kbd>**fn**</kbd> + <kbd>**1**</kbd> 3 秒吗？</summary>
+
+    不需要。
+
+</details>
