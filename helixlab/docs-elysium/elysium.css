@@ -13,8 +13,9 @@
     margin-top: 130px;
     text-align: center;
     word-spacing: 0.5rem;
-    font-size: 30px;
+    font-size: 29px;
     font-family: "Great Vibes", serif;
+    white-space: nowrap; /* 防止换行 */
 }
 
 .elysium {
@@ -23,6 +24,17 @@
     font-size: 88px;
     letter-spacing: 1rem;
     font-family: "MonktonIncisedSolid", serif;
+    white-space: nowrap; /* 防止换行 */
+}
+
+@media (max-width: 768px) {
+    .elysium {
+        font-size: 65px;
+        letter-spacing: 0.8rem;
+    }
+    .elysium-label {
+        font-size: 26px; /* 屏幕宽度小于768px时的字体大小 */
+    }
 }
 
 [data-theme='dark'] .elysium-label {
