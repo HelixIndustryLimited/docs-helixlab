@@ -81,6 +81,10 @@ a {
   background-color: #474747; /* 竖线颜色 */
 }
 
+.navbar {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .navbar__brand::after{
     display: none;
