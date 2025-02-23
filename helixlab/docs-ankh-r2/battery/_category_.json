@@ -1,7 +1,8 @@
 {
-  "label": "battery",
+  "label": "电池",
   "position": 7,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "slug": "/battery"
   }
 }

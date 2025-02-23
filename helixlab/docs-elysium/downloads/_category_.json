@@ -1,7 +1,8 @@
 {
-  "label": "downloads",
+  "label": "下载",
   "position": 2,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "slug": "/downloads"
   }
 }

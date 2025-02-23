@@ -19,3 +19,123 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 <img src={'/img/numbers/n_1.svg'} style={{ verticalAlign: '-0.16em', width: '18px' }} /> &nbsp; （选装）安装底棉，左右各一。
 
 <img src={'/img/numbers/n_2.svg'} style={{ verticalAlign: '-0.16em', width: '18px' }} /> &nbsp; （选装）安装轴下垫，左右各一。
+
+:::info
+
+底棉、轴下垫左右区分:
+
+<div style={{ 
+  display: 'grid',
+  gridTemplateAreas: `"left main right" "bottom bottom bottom"`,
+  alignItems: 'center',
+  gap: '4px 12px', // 纵向间隔 横向间隔
+  margin: '20px 0',
+  gridTemplateColumns: '1fr auto 1fr', // 关键修改点
+  width: '100%', // 确保grid容器占满父级宽度
+}}>
+  {/* 左侧文字 */}
+  <span style={{ 
+    gridArea: 'left',
+    textAlign: 'right',
+    justifySelf: 'end',
+    fontSize: 10,
+    fontWeight: 'bold',
+    color: '#fff',
+    whiteSpace: 'nowrap',
+    marginRight: '8px',
+  }}>左</span>
+
+  {/* 图片主体 */}
+  <div style={{ gridArea: 'main', position: 'relative',  width: '600px', justifySelf: 'center'}}>
+    <ThemedImage
+    alt="Docusaurus themed image"
+    sources={{
+    light: useBaseUrl('/img/elysium/building-guide/7_info_2.svg'),
+    dark: useBaseUrl('/img/elysium/building-guide/7_info_2_dark.svg'),
+  }}
+/>
+  </div>
+
+  {/* 右侧文字 */}
+  <span style={{ 
+    gridArea: 'right',
+    textAlign: 'left',
+    justifySelf: 'start',
+    fontSize: 10,
+    fontWeight: 'bold',
+    color: '#fff',
+    whiteSpace: 'nowrap',
+    marginLeft: '8px',
+  }}>右</span>
+
+  {/* 底部文字 */}
+  <div style={{ 
+    gridArea: 'bottom',
+    textAlign: 'center',
+    fontSize: 10,
+    fontWeight: 'bold',
+    color: '#fff',
+    marginTop: '4px',
+  }}>
+    <Icon icon="fa-solid fa-caret-up" /> 底棉
+  </div>
+</div>
+
+<div style={{ 
+  display: 'grid',
+  gridTemplateAreas: `"left main right" "bottom bottom bottom"`,
+  alignItems: 'center',
+  gap: '4px 12px', // 纵向间隔 横向间隔
+  margin: '20px 0',
+  gridTemplateColumns: '1fr auto 1fr', // 关键修改点
+  width: '100%', // 确保grid容器占满父级宽度
+}}>
+  {/* 左侧文字 */}
+  <span style={{ 
+    gridArea: 'left',
+    textAlign: 'right',
+    justifySelf: 'end',
+    fontSize: 10,
+    fontWeight: 'bold',
+    color: '#fff',
+    whiteSpace: 'nowrap',
+    marginRight: '8px',
+  }}>左</span>
+
+  {/* 图片主体 */}
+  <div style={{ gridArea: 'main', position: 'relative',  width: '600px', justifySelf: 'center'}}>
+    <ThemedImage
+    alt="Docusaurus themed image"
+    sources={{
+    light: useBaseUrl('/img/elysium/building-guide/7_info_1.svg'),
+    dark: useBaseUrl('/img/elysium/building-guide/7_info_1_dark.svg'),
+  }}
+/>
+  </div>
+
+  {/* 右侧文字 */}
+  <span style={{ 
+    gridArea: 'right',
+    textAlign: 'left',
+    justifySelf: 'start',
+    fontSize: 10,
+    fontWeight: 'bold',
+    color: '#fff',
+    whiteSpace: 'nowrap',
+    marginLeft: '8px',
+  }}>右</span>
+
+  {/* 底部文字 */}
+  <div style={{ 
+    gridArea: 'bottom',
+    textAlign: 'center',
+    fontSize: 10,
+    fontWeight: 'bold',
+    color: '#fff',
+    marginTop: '4px',
+  }}>
+    <Icon icon="fa-solid fa-caret-up" /> 轴下垫
+  </div>
+</div>
+
+:::

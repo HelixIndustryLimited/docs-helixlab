@@ -2,6 +2,7 @@
   "label": "装配",
   "position": 3,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "slug": "/build"
   }
 }

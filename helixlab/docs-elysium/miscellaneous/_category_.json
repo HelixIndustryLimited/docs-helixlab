@@ -1,7 +1,8 @@
 {
-  "label": "miscellaneous",
+  "label": "其它",
   "position": 9,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "slug": "/miscellaneous"
   }
 }

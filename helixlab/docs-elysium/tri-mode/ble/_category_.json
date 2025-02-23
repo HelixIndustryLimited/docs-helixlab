@@ -1,7 +1,8 @@
 {
-  "label": "ble",
+  "label": "BLE",
   "position": 3,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "slug": "/ble"
   }
 }
