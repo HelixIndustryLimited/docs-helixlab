@@ -171,7 +171,7 @@ const config: Config = {
         // },
         {
           label: '全部',
-          to: 'docs-products/aaru-65',
+          to: 'docs-products/keyboards',
           position: 'left',
           docsPluginId: 'docs-products',
           activeBasePath: 'docs-products',

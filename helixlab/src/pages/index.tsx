@@ -20,7 +20,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs-products/aaru-65">
+            to="/docs-products/keyboards">
             <Translate>
               选择产品
             </Translate>
