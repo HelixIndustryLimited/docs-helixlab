@@ -5,6 +5,7 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 import GridDistortion from '@site/src/components/GridDistortion/GridDistortion';
+import DecryptedText from '@site/src/components/DecryptedText/DecryptedText'
 
 import styles from './index.module.css';
 import Translate from '@docusaurus/Translate';
@@ -51,7 +52,7 @@ export default function Home(): JSX.Element {
           relaxation={0.9}
           className="custom-class"
         />
-        <div
+        {/* <div
             style={{
               position: 'absolute',
               top: '50%',
@@ -63,9 +64,33 @@ export default function Home(): JSX.Element {
               userSelect: 'none',
               mixBlendMode: 'difference',
               pointerEvents: 'none',
-              color: 'difference',
+              color: 'rgb(16, 5, 5)',
             }}>
             Helix Lab Docs.
+        </div> */}
+          
+          <div style={{
+          position: 'absolute',
+          top: '0%',
+          left: '0%',
+          transform: 'translate(7%, 15%)',
+          textAlign: 'left',
+              fontSize: '4rem',
+              fontWeight: 900,
+              userSelect: 'none',
+              mixBlendMode: 'difference',
+              pointerEvents: 'none',
+              fontFamily: 'Roboto Mono',
+              color: 'rgb(210, 210, 210)',
+              // color:'#cc9e75'
+          }}>
+            <DecryptedText
+            text="Helix Lab Docs."
+            animateOn="view"
+            revealDirection="start"
+            maxIterations={8}
+            speed={30}
+          />
           </div>
       </div>
       </main>
