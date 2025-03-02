@@ -76,11 +76,11 @@ export default function Home(): JSX.Element {
           transform: 'translate(7%, 15%)',
           textAlign: 'left',
               fontSize: '4rem',
-              fontWeight: 900,
+              fontWeight: 700,
               userSelect: 'none',
               mixBlendMode: 'difference',
               pointerEvents: 'none',
-              fontFamily: 'Roboto Mono',
+              fontFamily: "Roboto Mono",
               color: 'rgb(210, 210, 210)',
               // color:'#cc9e75'
           }}>
