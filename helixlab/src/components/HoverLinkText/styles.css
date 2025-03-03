@@ -51,15 +51,6 @@
   color: #e0e0e0;
 }
 
-/* 暗黑模式适配 */
-@media (prefers-color-scheme: dark) {
-  .text-overlay {
-    background: rgba(30, 30, 30, 0.97);
-    border-color: rgba(255, 255, 255, 0.15);
-    color: #e0e0e0;
-  }
-}
-
 /* 动态动画 */
 @keyframes tooltip-appear {
   0% {

@@ -48,7 +48,11 @@ import Stepper, { Step } from '@site/src/components/Stepper/Stepper';
 
 | 版本 | <Icon icon="fa-brands fa-windows" /> Windows | <Icon icon="fa-brands fa-apple" /> macOS |
 | --- | --- | --- |
-| 0.2.2 | <Icon icon="fa-solid fa-circle-down" />[下载](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/qmk_toolbox.exe) | <Icon icon="fa-solid fa-circle-down" />[下载](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/QMK.Toolbox.pkg) |
+| 0.3.3 | <Icon icon="fa-solid fa-circle-down" />[下载](https://github.com/qmk/qmk_toolbox/releases/download/0.3.3/qmk_toolbox.exe) | <Icon icon="fa-solid fa-circle-down" />[下载](https://github.com/qmk/qmk_toolbox/releases/download/0.3.3/QMK.Toolbox.pkg) |
+
+:::tip
+上方下载链接来自Github，如果下载速度过慢，可从 Helix Lab [QQ 群](https://qm.qq.com/cgi-bin/qm/qr?k=CZ8cITH1Ttx95m1B79vkY69c7OyMOySw&authKey=r2Ol3%2BTGqOnyk5bjTdqW3h%2BXl13HqU446XeAc1vCHHt98YYqULl1W%2BHz0FZgtv4B&noverify=0&group_code=942327559)获取文件。
+:::
   </Step>
   <Step>
     <h2>在 QMK Toolbox 中载入固件</h2>
@@ -64,6 +68,10 @@ import Stepper, { Step } from '@site/src/components/Stepper/Stepper';
   <h2>检查引导模式是否成功进入</h2>
   <p>如果键盘已经正确进入引导模式，在 QMK Toolbox 中你会看到如下的黄色小字：</p>
   <p className="special-text"> STM32 DFU device connected: STMicroelectronics STM32  BOOTLOADER (0483:DF11:2200) </p>
+
+:::tip
+如果在操作过程中遇到任何红色字体的错误提示，请首先检查您的 QMK Toolbox 版本是否为 0.3.3。如果确认版本正确，请按照以下步骤操作：在 QMK Toolbox 中点击 `Tools` 菜单，选择 `Install Drivers` 以安装所需驱动程序。完成驱动安装后，请关闭并重新启动 QMK Toolbox 应用程序。
+:::
   </Step>
     <Step>
   <h2>完成！</h2>
@@ -79,7 +87,7 @@ import Stepper, { Step } from '@site/src/components/Stepper/Stepper';
   initialStep={1}
   backButtonText="Previous"
   nextButtonText="Next"
-  style = {{  marginTop: '0rem', marginBottom: '0rem'}}
+  style = {{  marginTop: 'rem', marginBottom: '0rem'}}
   >
   <Step>
     <h2>焊接 固件更新步骤</h2>
