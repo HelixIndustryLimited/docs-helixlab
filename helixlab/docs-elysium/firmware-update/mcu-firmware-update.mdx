@@ -5,6 +5,7 @@ description: 主控更新固件
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import Stepper, { Step } from '@site/src/components/Stepper/Stepper';
 
 # 主控固件更新  {#mcu-firmware-update}
 
@@ -22,51 +23,83 @@ import TabItem from '@theme/TabItem';
 
 :::
 
-## 更新步骤 {#updating-step}
+## 固件更新步骤 {#updating-step}
 
 <Tabs queryString="pcb-variant">
   <TabItem value="hotswap" label="热插拔" default>
 
-<p className="step-number-text"> I. </p>
-
-  从[固件](/docs-elysium/downloads/firmware?pcb-variant=hotswap)页面下载固件。
-
-<p className="step-number-text"> II. </p>
-
- 在你的电脑上下载并安装 QMK Toolbox 软件，若已安装则忽略。
+ <Stepper
+  initialStep={1}
+  backButtonText="Previous"
+  nextButtonText="Next"
+  style = {{  marginTop: '5rem', marginBottom: '3rem'}}
+>
+  <Step>
+    <h2>热插拔 固件更新步骤</h2>
+    <p>请点击 “Next”。</p>
+  </Step>
+  <Step>
+    <h2>准备固件</h2>
+    从[固件](/docs-elysium/downloads/firmware?pcb-variant=hotswap)页面下载固件。
+  </Step>
+  <Step>
+    <h2>准备 QMK Toolbox 软件</h2>
+     在你的电脑上下载并安装 QMK Toolbox 软件，若已安装则忽略。
 
 | 版本 | <Icon icon="fa-brands fa-windows" /> Windows | <Icon icon="fa-brands fa-apple" /> macOS |
 | --- | --- | --- |
 | 0.2.2 | <Icon icon="fa-solid fa-circle-down" />[下载](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/qmk_toolbox.exe) | <Icon icon="fa-solid fa-circle-down" />[下载](https://cdn.shopify.com/s/files/1/0444/8259/2928/files/QMK.Toolbox.pkg) |
-
-<p className="step-number-text"> III. </p>
-
- 打开 QMK Toolbox，在 `Local file` 一栏中载入固件所在的地址。
-
-<p className="step-number-text"> IU. </p>
-
- 将键盘通过 USB 数据线连接到电脑主机，并让键盘进入引导模式，下图所示的绿色按键为引导模式键。
-
-![](./img/elysium_keycodes_boot.svg)
-
-按下组合键 <kbd>**fn**</kbd> + <kbd>**shift**</kbd> + <kbd>**esc**</kbd>，则键盘会进入引导模式。
-
-<p className="step-number-text"> UI. </p> 如果键盘已经正确进入引导模式，在 QMK Toolbox 中你会看到如下的黄色小字：
-
-<p className="special-text"> STM32 DFU device connected: STMicroelectronics STM32  BOOTLOADER (0483:DF11:2200) </p>
-
-<p className="step-number-text"> UII. </p>
-
- 点击 QMK Toolbox 中的 `Flash` 按钮，等待约 10 秒后，烧录即可完成。
+  </Step>
+  <Step>
+    <h2>在 QMK Toolbox 中载入固件</h2>
+    <p>打开 QMK Toolbox，在 `Local file` 一栏中载入固件所在的地址。</p>
+  </Step>
+    <Step>
+    <h2>将键盘置入引导模式</h2>
+    <p>将键盘通过 USB 数据线连接到电脑主机，并让键盘进入引导模式，下图所示的绿色按键为引导模式键。</p>
+    ![](./img/elysium_keycodes_boot.svg)
+    <p>按下组合键 <kbd>**fn**</kbd> + <kbd>**shift**</kbd> + <kbd>**esc**</kbd>，则键盘会进入引导模式。</p>
+  </Step>
+  <Step>
+  <h2>检查引导模式是否成功进入</h2>
+  <p>如果键盘已经正确进入引导模式，在 QMK Toolbox 中你会看到如下的黄色小字：</p>
+  <p className="special-text"> STM32 DFU device connected: STMicroelectronics STM32  BOOTLOADER (0483:DF11:2200) </p>
+  </Step>
+    <Step>
+  <h2>完成！</h2>
+  <p>点击 QMK Toolbox 中的 `Flash` 按钮，等待约 10 秒后，烧录即可完成。</p>
+  </Step>
+  
+</Stepper>
 
   </TabItem>
   <TabItem value="soldered" label="焊接">
     
-    <Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-1" style={{color: "#cc9e75",}} />  从[固件](/docs-elysium/downloads/firmware?pcb-variant=soldered)页面下载固件。请检查固件的后缀名，确保为 `.uf2`。
-
-    <Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-2" style={{color: "#cc9e75",}} />  断开 USB 数据线，按住键盘上的 <kbd>**esc**</kbd> 的同时插入 USB 数据线。
-
-    <Icon icon="fa-solid fa-hashtag" style={{color: "#cc9e75",}} /> <Icon icon="fa-solid fa-3" style={{color: "#cc9e75",}} />  你的电脑上会弹出一个名为 `BOOT` 的新卷宗，将固件拖入此卷宗即可完成烧录。
+  <Stepper
+  initialStep={1}
+  backButtonText="Previous"
+  nextButtonText="Next"
+  style = {{  marginTop: '0rem', marginBottom: '0rem'}}
+  >
+  <Step>
+    <h2>焊接 固件更新步骤</h2>
+    <p>请点击 “Next”。</p>
+  </Step>
+  <Step>
+    <h2>准备固件</h2>
+    <p>从[固件](/docs-elysium/downloads/firmware?pcb-variant=soldered)页面下载固件。请检查固件的后缀名，确保为 `.uf2`。</p>
+  </Step>
+    <Step>
+    <h2>将键盘置入引导模式</h2>
+    <p>断开 USB 数据线，按住键盘上的 <kbd>**esc**</kbd> 的同时插入 USB 数据线。</p>
+  </Step>
+      <Step>
+    <h2>完成！</h2>
+    <p>你的电脑上会弹出一个名为 `BOOT` 的新卷宗，将固件拖入此卷宗即可完成烧录。</p>
+    <p>烧录完毕后，卷宗会自动弹出。</p>
+  </Step>
+  
+</Stepper>
 
   </TabItem>
 </Tabs>
