@@ -2,6 +2,7 @@ import React from 'react';
 import DataTable from 'react-data-table-component';
 import Translate from '@docusaurus/Translate';
 import CustomButton from '@site/src/components/Button/CustomButton';
+import HoverLinkText from '@site/src/components/HoverLinkText/HoverLinkText';
 
 const columns = [
   {
@@ -43,6 +44,43 @@ const columns = [
 ];
 
 const data = [
+  {
+    ver: '1.0.3',
+    code: '2',
+    info: (
+<HoverLinkText
+  content={
+    <div>
+      <h4>更新内容</h4>
+      <p>包含以下新功能：</p>
+      <ul>
+        <li>USB 全键无冲。</li>
+      </ul>
+      <p>包含以下优化：</p>
+      <ul>
+        <li>改善 RGB 矩阵开启的情况下可听见的噪音。</li>
+      </ul>
+    </div>
+  }
+/>
+        ),
+    download: (
+      <div style={{ display: 'flex', gap: '1px'}}>
+        <CustomButton 
+          href="https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helix_elysium_hotswap_1.0.3.bin"
+          target="_self"
+        >
+          firmware.bin
+        </CustomButton>
+        <CustomButton 
+          href="https://cdn.shopify.com/s/files/1/0444/8259/2928/files/helixlab_elysium_hotswap_1.0.0.json.zip"
+          target="_self"
+        >
+          via.json
+        </CustomButton>
+      </div>
+    ),
+  },
   {
     ver: '1.0.2',
     code: '1',

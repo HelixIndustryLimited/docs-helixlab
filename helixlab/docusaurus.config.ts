@@ -52,6 +52,22 @@ const config: Config = {
           // editUrl:
           //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           showLastUpdateTime: true,
+          admonitions: {
+            keywords: [
+                'info',
+                'success',
+                'danger',
+                'note',
+                'tip',
+                'warning',
+                'important',
+                'caution',
+                'security',
+                'discord',
+                'feature',
+            ],
+            extendDefaults: true,
+        },
         },
         blog: {
           showReadingTime: false,

@@ -5,6 +5,7 @@ import AdmonitionTypeInfo from '@theme/Admonition/Type/Info';
 import AdmonitionTypeCaution from '@theme/Admonition/Type/Caution';
 import AdmonitionTypeDanger from '@theme/Admonition/Type/Danger';
 import AdmonitionTypeDiscord from './Type/Discord';
+import AdmonitionTypeFeature from './Type/Feature';
 import AdmonitionTypeSecurity from './Type/Security';
 import AdmonitionTypeRelease from './Type/Release';
 import AdmonitionTypeCredit from './Type/Credit';
@@ -19,6 +20,7 @@ const admonitionTypes: typeof AdmonitionTypes = {
   caution: AdmonitionTypeCaution,
   danger: AdmonitionTypeDanger,
   discord: AdmonitionTypeDiscord,
+  feature: AdmonitionTypeFeature,
   security: AdmonitionTypeSecurity,
   release: AdmonitionTypeRelease,
   credit: AdmonitionTypeCredit,

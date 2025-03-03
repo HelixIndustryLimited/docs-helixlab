@@ -197,6 +197,11 @@ details a{
   border-left: 5px solid #0d2f4a;
 }
 
+[data-theme='dark'] .theme-admonition-feature {
+  background-color: #1a456b; 
+  border-left: 5px solid #0d2f4a;
+}
+
 .theme-admonition-danger {
   font-size: smaller;
   color:#fff;
@@ -236,6 +241,27 @@ details a{
   --ifm-alert-background-color-highlight: rgb(43, 43, 43);
   --ifm-alert-foreground-color: #d3d3d3;
   --ifm-alert-border-color: #d3d3d3;
+}
+
+.alert--security {
+  --ifm-alert-background-color: rgba(212, 53, 28, 0.5);
+  --ifm-alert-background-color-highlight: rgba(212, 53, 28, 0.15);
+  --ifm-alert-foreground-color: rgb(66,69,73);
+  --ifm-alert-border-color: #d4351c;
+}
+
+html[data-theme='dark'] .alert--security {
+  --ifm-alert-background-color: rgba(212, 53, 28, 0.5);
+  --ifm-alert-background-color-highlight: rgba(212, 53, 28, 0.15);
+  --ifm-alert-foreground-color: rgb(255,255,255);
+  --ifm-alert-border-color: #d4351c;
+}
+
+.alert--discord {
+  --ifm-alert-background-color: rgba(114, 137, 218, 0.5);
+  --ifm-alert-background-color-highlight: rgba(84, 199, 236, 0.15);
+  --ifm-alert-foreground-color: rgb(66,69,73);
+  --ifm-alert-border-color: #5865F2;
 }
 
 img[alt=mode-switch_drawing] { width: 200px; }
