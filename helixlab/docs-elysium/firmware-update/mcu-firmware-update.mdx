@@ -56,7 +56,7 @@ import Stepper, { Step } from '@site/src/components/Stepper/Stepper';
   </Step>
   <Step>
     <h2>在 QMK Toolbox 中载入固件</h2>
-    <p>打开 QMK Toolbox，在 `Local file` 一栏中载入固件所在的地址。</p>
+    <p>以管理员权限打开 QMK Toolbox，在 `Local file` 一栏中载入固件所在的地址。</p>
   </Step>
     <Step>
     <h2>将键盘置入引导模式</h2>
@@ -69,7 +69,7 @@ import Stepper, { Step } from '@site/src/components/Stepper/Stepper';
   <p>如果键盘已经正确进入引导模式，在 QMK Toolbox 中你会看到如下的黄色小字：</p>
   <p className="special-text"> STM32 DFU device connected: STMicroelectronics STM32  BOOTLOADER (0483:DF11:2200) </p>
 
-:::tip
+:::info
 如果在操作过程中遇到任何红色字体的错误提示，请首先检查您的 QMK Toolbox 版本是否为 0.3.3。如果确认版本正确，请按照以下步骤操作：在 QMK Toolbox 中点击 `Tools` 菜单，选择 `Install Drivers` 以安装所需驱动程序。完成驱动安装后，请关闭并重新启动 QMK Toolbox 应用程序。
 :::
   </Step>
