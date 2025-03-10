@@ -177,7 +177,7 @@ const config: Config = {
         alt: 'My Site Logo',
         src: 'img/logo-helixlab.svg',
       },
-      hideOnScroll: true,
+      hideOnScroll: false,
       items: [
         // {
         //   type: 'docSidebar',
