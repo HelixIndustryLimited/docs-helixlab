@@ -82,17 +82,23 @@ a {
 }
 
 .navbar {
-  background-color: rgba(255, 255, 255, 0.7) !important; /* 白色背景带透明度 */
-  backdrop-filter: blur(10px) !important; /* 毛玻璃模糊效果 */
-  -webkit-backdrop-filter: blur(10px) !important; /* Safari 浏览器支持 */
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1) !important; /* 轻微阴影效果 */
+  background-color: rgba(255, 255, 255, 0.7); /* 白色背景带透明度 */
+  backdrop-filter: blur(10px); /* 毛玻璃模糊效果 */
+  -webkit-backdrop-filter: blur(10px); /* Safari 浏览器支持 */
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1); /* 轻微阴影效果 */
   z-index: 100; /* 确保在上层 */
 }
 
 html[data-theme='dark'] .navbar {
-  background-color: rgba(30, 30, 30, 0.7) !important; /* 暗色背景带透明度 */
+  background-color: rgba(30, 30, 30, 0.7); /* 暗色背景带透明度 */
 }
 
+@media (max-width: 1000px) {
+  .navbar{
+    backdrop-filter: none;
+    -webkit-backdrop-filter:none;
+  }
+}
 
 /* .navbar {
   display: none;
