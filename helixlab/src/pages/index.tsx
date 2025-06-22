@@ -10,6 +10,8 @@ import DecryptedText from '@site/src/components/DecryptedText/DecryptedText'
 import styles from './index.module.css';
 import Translate from '@docusaurus/Translate';
 
+import ModalComponent from '@site/src/components/page_modal/page_modal';
+
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -52,6 +54,7 @@ export default function Home(): JSX.Element {
           relaxation={0.9}
           className="custom-class"
         />
+        <ModalComponent />
         {/* <div
             style={{
               position: 'absolute',
