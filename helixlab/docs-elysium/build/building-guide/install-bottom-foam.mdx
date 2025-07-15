@@ -24,7 +24,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 底棉、轴下垫左右区分:
 
-<div style={{ 
+<div className="responsive-image-grid" style={{ 
   display: 'grid',
   gridTemplateAreas: `"left main right" "bottom bottom bottom"`,
   alignItems: 'center',
@@ -46,7 +46,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
   }}>左</span>
 
   {/* 图片主体 */}
-  <div style={{ gridArea: 'main', position: 'relative',  width: '600px', justifySelf: 'center'}}>
+  <div className="responsive-image-container" style={{ gridArea: 'main', position: 'relative',  width: '600px', justifySelf: 'center'}}>
     <ThemedImage
     alt="Docusaurus themed image"
     sources={{
@@ -81,7 +81,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
   </div>
 </div>
 
-<div style={{ 
+<div className="responsive-image-grid" style={{ 
   display: 'grid',
   gridTemplateAreas: `"left main right" "bottom bottom bottom"`,
   alignItems: 'center',
@@ -103,7 +103,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
   }}>左</span>
 
   {/* 图片主体 */}
-  <div style={{ gridArea: 'main', position: 'relative',  width: '600px', justifySelf: 'center'}}>
+  <div className="responsive-image-container" style={{ gridArea: 'main', position: 'relative',  width: '600px', justifySelf: 'center'}}>
     <ThemedImage
     alt="Docusaurus themed image"
     sources={{

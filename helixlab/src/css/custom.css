@@ -452,6 +452,29 @@ kbd {
   }
 }
 
+/* 响应式图片布局样式 */
+@media (max-width: 768px) {
+  .responsive-image-grid {
+    gap: 2px 6px !important;
+    margin: 10px 0 !important;
+  }
+  
+  .responsive-image-grid span {
+    font-size: 8px !important;
+    margin-left: 4px !important;
+    margin-right: 4px !important;
+  }
+  
+  .responsive-image-grid div {
+    font-size: 8px !important;
+  }
+  
+  .responsive-image-container {
+    width: 70vw !important;
+    max-width: 400px !important;
+  }
+}
+
 @font-face {
   font-family: "DejavuSansMono";
   src: url('/static/DejaVuSansMono.woff') format('woff');
@@ -472,3 +495,4 @@ kbd {
 @import url('https://fonts.googleapis.com/css2?family=Padyakke+Expanded+One&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
